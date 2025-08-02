@@ -1,6 +1,7 @@
 package io.horizontalsystems.monerokit
 
 import android.content.Context
+import android.util.Log
 import io.horizontalsystems.monerokit.data.Node
 import io.horizontalsystems.monerokit.model.Wallet
 import io.horizontalsystems.monerokit.model.WalletListener
@@ -53,7 +54,7 @@ class MoneroKit(
     }
 
     fun restoreWallet(seed: String) {
-        Timber.tag("eee").e("called restoreWallet")
+        Log.e("eee", "called restoreWallet")
 
         val password = "123"
         val offset = ""
@@ -62,15 +63,16 @@ class MoneroKit(
         val rootStorage = Helper.getWalletRoot(context)
         val newWalletFile = File(rootStorage, walletName)
 
-        Timber.tag("eee").e("wallet path: ${newWalletFile.absolutePath}")
+        Log.e("eee", "wallet path: ${newWalletFile.absolutePath}")
 
         val newWallet: Wallet = WalletManager.getInstance()
             .recoveryWallet(newWalletFile, password, seed, offset, restoreHeight)
 
-        Timber.tag("eee").e("wallet: ${newWallet.address}")
+        Log.e("eee", "wallet: ${newWallet.address}" )
 
         val result = checkAndCloseWallet(newWallet)
-        Timber.e("check result: $result")
+
+        Log.e("eee", "check result: $result")
     }
 
     fun checkAndCloseWallet(aWallet: Wallet): Boolean {
