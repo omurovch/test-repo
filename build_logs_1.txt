@@ -1,0 +1,548 @@
+Initialized native services in: /Users/chyngyz/.gradle/native
+Initialized jansi services in: /Users/chyngyz/.gradle/native
+Found daemon DaemonInfo{pid=54075, address=[5cf6a917-fbb1-4566-8d54-8760db74c01f port:55011, addresses:[/127.0.0.1]], state=Idle, lastBusy=1752840066231, context=DefaultDaemonContext[uid=540b7a3e-3c32-4813-8e51-74ae9c5bed28,javaHome=/Applications/Android Studio.app/Contents/jbr/Contents/Home,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/Users/chyngyz/.gradle/daemon,pid=54075,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=KG,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{jvmCriteria=/Library/Java/JavaVirtualMachines/temurin-18.jdk/Contents/Home (no JDK specified, using current Java home), daemonOpts=[-Xmx2048m, -Dfile.encoding=UTF-8, -Duser.country=KG, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=540b7a3e-3c32-4813-8e51-74ae9c5bed28,javaHome=/Applications/Android Studio.app/Contents/jbr/Contents/Home,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/Users/chyngyz/.gradle/daemon,pid=54075,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=KG,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 65531). The daemon log file: /Users/chyngyz/.gradle/daemon/8.13/daemon-65531.out.log
+Starting 3rd build in daemon [uptime: 2 mins 1.175 secs, performance: 98%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 8 worker leases.
+Now considering [/Users/chyngyz/projects/monero-kit-android] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file '/Users/chyngyz/projects/monero-kit-android/settings.gradle'.
+Projects loaded. Root project using build file '/Users/chyngyz/projects/monero-kit-android/build.gradle'.
+Included projects: [root project 'monero-kit-android', project ':app', project ':monerokit']
+
+> Configure project :
+Evaluating root project 'monero-kit-android' using build file '/Users/chyngyz/projects/monero-kit-android/build.gradle'.
+Resolved plugin [id: 'com.android.application', version: '8.11.1', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.0.21', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.0.21', apply: false]
+Resolved plugin [id: 'com.android.library', version: '8.11.1', apply: false]
+
+> Configure project :app
+Evaluating project ':app' using build file '/Users/chyngyz/projects/monero-kit-android/app/build.gradle'.
+Resolved plugin [id: 'com.android.application', version: '8.11.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.0.21']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.0.21']
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :monerokit
+Evaluating project ':monerokit' using build file '/Users/chyngyz/projects/monero-kit-android/monerokit/build.gradle'.
+Resolved plugin [id: 'com.android.library', version: '8.11.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.0.21']
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+All projects evaluated.
+Task name matched 'build'
+Selected primary task 'build' from project :
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugKotlin
+Tasks to be executed: [task ':app:preBuild', task ':app:preDebugBuild', task ':app:mergeDebugNativeDebugMetadata', task ':app:checkKotlinGradlePluginConfigurationErrors', task ':monerokit:preBuild', task ':monerokit:preDebugBuild', task ':monerokit:writeDebugAarMetadata', task ':app:checkDebugAarMetadata', task ':app:generateDebugResValues', task ':monerokit:generateDebugResValues', task ':monerokit:generateDebugResources', task ':monerokit:packageDebugResources', task ':app:mapDebugSourceSetPaths', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':monerokit:extractDeepLinksDebug', task ':monerokit:processDebugManifest', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':monerokit:compileDebugLibraryResources', task ':monerokit:parseDebugLocalResources', task ':monerokit:generateDebugRFile', task ':app:processDebugResources', task ':monerokit:checkKotlinGradlePluginConfigurationErrors', task ':monerokit:compileDebugKotlin', task ':monerokit:javaPreCompileDebug', task ':monerokit:compileDebugJavaWithJavac', task ':monerokit:bundleLibCompileToJarDebug', task ':app:compileDebugKotlin', task ':app:javaPreCompileDebug', task ':app:compileDebugJavaWithJavac', task ':app:mergeDebugShaders', task ':app:compileDebugShaders', task ':app:generateDebugAssets', task ':monerokit:mergeDebugShaders', task ':monerokit:compileDebugShaders', task ':monerokit:generateDebugAssets', task ':monerokit:mergeDebugAssets', task ':app:mergeDebugAssets', task ':app:compressDebugAssets', task ':app:processDebugJavaRes', task ':monerokit:processDebugJavaRes', task ':app:mergeDebugJavaResource', task ':app:checkDebugDuplicateClasses', task ':app:desugarDebugFileDependencies', task ':app:mergeExtDexDebug', task ':monerokit:bundleLibRuntimeToDirDebug', task ':app:mergeLibDexDebug', task ':app:dexBuilderDebug', task ':app:mergeProjectDexDebug', task ':app:mergeDebugJniLibFolders', task ':monerokit:configureCMakeDebug[arm64-v8a]', task ':monerokit:buildCMakeDebug[arm64-v8a]', task ':monerokit:configureCMakeDebug[armeabi-v7a]', task ':monerokit:buildCMakeDebug[armeabi-v7a]', task ':monerokit:mergeDebugJniLibFolders', task ':monerokit:mergeDebugNativeLibs', task ':monerokit:copyDebugJniLibsProjectOnly', task ':app:mergeDebugNativeLibs', task ':app:stripDebugDebugSymbols', task ':app:validateSigningDebug', task ':app:writeDebugAppMetadata', task ':app:writeDebugSigningConfigVersions', task ':app:packageDebug', task ':app:createDebugApkListingFileRedirect', task ':app:assembleDebug', task ':app:preReleaseBuild', task ':app:mergeReleaseJniLibFolders', task ':monerokit:preReleaseBuild', task ':monerokit:configureCMakeRelWithDebInfo[arm64-v8a]', task ':monerokit:buildCMakeRelWithDebInfo[arm64-v8a]', task ':monerokit:configureCMakeRelWithDebInfo[armeabi-v7a]', task ':monerokit:buildCMakeRelWithDebInfo[armeabi-v7a]', task ':monerokit:mergeReleaseJniLibFolders', task ':monerokit:mergeReleaseNativeLibs', task ':monerokit:copyReleaseJniLibsProjectOnly', task ':app:mergeReleaseNativeLibs', task ':app:stripReleaseDebugSymbols', task ':app:extractReleaseNativeSymbolTables', task ':app:mergeReleaseNativeDebugMetadata', task ':monerokit:generateReleaseResValues', task ':monerokit:generateReleaseResources', task ':monerokit:packageReleaseResources', task ':monerokit:parseReleaseLocalResources', task ':monerokit:generateReleaseRFile', task ':monerokit:compileReleaseKotlin', task ':monerokit:javaPreCompileRelease', task ':monerokit:compileReleaseJavaWithJavac', task ':monerokit:bundleLibRuntimeToDirRelease', task ':app:checkReleaseDuplicateClasses', task ':app:buildKotlinToolingMetadata', task ':monerokit:writeReleaseAarMetadata', task ':app:checkReleaseAarMetadata', task ':app:generateReleaseResValues', task ':app:mapReleaseSourceSetPaths', task ':app:generateReleaseResources', task ':app:mergeReleaseResources', task ':app:packageReleaseResources', task ':app:parseReleaseLocalResources', task ':app:createReleaseCompatibleScreenManifests', task ':app:extractDeepLinksRelease', task ':monerokit:extractDeepLinksRelease', task ':monerokit:processReleaseManifest', task ':app:processReleaseMainManifest', task ':app:processReleaseManifest', task ':app:processReleaseManifestForPackage', task ':monerokit:compileReleaseLibraryResources', task ':app:processReleaseResources', task ':monerokit:bundleLibCompileToJarRelease', task ':app:compileReleaseKotlin', task ':app:javaPreCompileRelease', task ':app:compileReleaseJavaWithJavac', task ':app:dexBuilderRelease', task ':app:desugarReleaseFileDependencies', task ':app:mergeReleaseStartupProfile', task ':app:mergeExtDexRelease', task ':app:mergeDexRelease', task ':monerokit:prepareReleaseArtProfile', task ':app:mergeReleaseArtProfile', task ':monerokit:bundleLibRuntimeToJarRelease', task ':app:mergeReleaseGlobalSynthetics', task ':app:compileReleaseArtProfile', task ':app:mergeReleaseShaders', task ':app:compileReleaseShaders', task ':app:generateReleaseAssets', task ':monerokit:mergeReleaseShaders', task ':monerokit:compileReleaseShaders', task ':monerokit:generateReleaseAssets', task ':monerokit:mergeReleaseAssets', task ':app:mergeReleaseAssets', task ':app:compressReleaseAssets', task ':app:extractReleaseVersionControlInfo', task ':app:extractProguardFiles', task ':monerokit:processReleaseJavaRes', task ':monerokit:createFullJarRelease', task ':monerokit:extractProguardFiles', task ':monerokit:generateReleaseLintModel', task ':monerokit:prepareLintJarForPublish', task ':app:generateReleaseLintVitalReportModel', task ':monerokit:stripReleaseDebugSymbols', task ':monerokit:copyReleaseJniLibsProjectAndLocalJars', task ':monerokit:extractDeepLinksForAarRelease', task ':monerokit:extractReleaseAnnotations', task ':monerokit:mergeReleaseGeneratedProguardFiles', task ':monerokit:mergeReleaseConsumerProguardFiles', task ':monerokit:mergeReleaseJavaResource', task ':monerokit:syncReleaseLibJars', task ':monerokit:bundleReleaseLocalLintAar', task ':monerokit:lintVitalAnalyzeRelease', task ':monerokit:writeReleaseLintModelMetadata', task ':app:lintVitalAnalyzeRelease', task ':monerokit:generateReleaseLintVitalModel', task ':app:lintVitalReportRelease', task ':app:lintVitalRelease', task ':app:processReleaseJavaRes', task ':app:mergeReleaseJavaResource', task ':app:optimizeReleaseResources', task ':app:collectReleaseDependencies', task ':app:sdkReleaseDependencyData', task ':app:writeReleaseAppMetadata', task ':app:writeReleaseSigningConfigVersions', task ':app:packageRelease', task ':app:createReleaseApkListingFileRedirect', task ':app:assembleRelease', task ':app:assemble', task ':monerokit:stripDebugDebugSymbols', task ':monerokit:copyDebugJniLibsProjectAndLocalJars', task ':monerokit:extractDebugAnnotations', task ':monerokit:extractDeepLinksForAarDebug', task ':monerokit:mergeDebugGeneratedProguardFiles', task ':monerokit:mergeDebugConsumerProguardFiles', task ':monerokit:prepareDebugArtProfile', task ':monerokit:mergeDebugJavaResource', task ':monerokit:syncDebugLibJars', task ':monerokit:bundleDebugLocalLintAar', task ':app:bundleDebugClassesToCompileJar', task ':app:preDebugAndroidTestBuild', task ':app:generateDebugAndroidTestResValues', task ':monerokit:bundleLibRuntimeToJarDebug', task ':monerokit:createFullJarDebug', task ':monerokit:writeDebugLintModelMetadata', task ':app:generateDebugAndroidTestLintModel', task ':monerokit:generateDebugLintModel', task ':app:generateDebugLintReportModel', task ':app:preDebugUnitTestBuild', task ':app:generateDebugUnitTestLintModel', task ':monerokit:lintAnalyzeDebug', task ':app:lintAnalyzeDebug', task ':app:lintAnalyzeDebugAndroidTest', task ':app:lintAnalyzeDebugUnitTest', task ':monerokit:preDebugAndroidTestBuild', task ':monerokit:generateDebugAndroidTestResValues', task ':monerokit:generateDebugAndroidTestLintModel', task ':monerokit:preDebugUnitTestBuild', task ':monerokit:generateDebugUnitTestLintModel', task ':monerokit:lintAnalyzeDebugAndroidTest', task ':monerokit:lintAnalyzeDebugUnitTest', task ':app:lintReportDebug', task ':app:lintDebug', task ':app:lint', task ':app:bundleDebugClassesToRuntimeJar', task ':app:compileDebugUnitTestKotlin', task ':app:javaPreCompileDebugUnitTest', task ':app:compileDebugUnitTestJavaWithJavac', task ':app:processDebugUnitTestJavaRes', task ':app:testDebugUnitTest', task ':app:bundleReleaseClassesToRuntimeJar', task ':app:bundleReleaseClassesToCompileJar', task ':app:compileReleaseUnitTestKotlin', task ':app:preReleaseUnitTestBuild', task ':app:javaPreCompileReleaseUnitTest', task ':app:compileReleaseUnitTestJavaWithJavac', task ':app:processReleaseUnitTestJavaRes', task ':app:testReleaseUnitTest', task ':app:test', task ':app:check', task ':app:build', task ':monerokit:bundleDebugAar', task ':monerokit:assembleDebug', task ':monerokit:bundleReleaseAar', task ':monerokit:mapReleaseSourceSetPaths', task ':monerokit:mergeReleaseResources', task ':monerokit:verifyReleaseResources', task ':monerokit:assembleRelease', task ':monerokit:assemble', task ':monerokit:generateDebugLintReportModel', task ':monerokit:lintReportDebug', task ':monerokit:lintDebug', task ':monerokit:lint', task ':monerokit:generateDebugUnitTestStubRFile', task ':monerokit:compileDebugUnitTestKotlin', task ':monerokit:javaPreCompileDebugUnitTest', task ':monerokit:compileDebugUnitTestJavaWithJavac', task ':monerokit:processDebugUnitTestJavaRes', task ':monerokit:testDebugUnitTest', task ':monerokit:preReleaseUnitTestBuild', task ':monerokit:generateReleaseUnitTestStubRFile', task ':monerokit:compileReleaseUnitTestKotlin', task ':monerokit:javaPreCompileReleaseUnitTest', task ':monerokit:compileReleaseUnitTestJavaWithJavac', task ':monerokit:processReleaseUnitTestJavaRes', task ':monerokit:testReleaseUnitTest', task ':monerokit:test', task ':monerokit:check', task ':monerokit:build']
+Tasks that were excluded: []
+work action Parameters of ClassesDirToClassesTransform (Thread[Execution worker,5,main]) started.
+work action Parameters of DexingNoClasspathTransform (Thread[Execution worker,5,main]) started.
+work action Parameters of DexingNoClasspathTransform (Thread[Execution worker,5,main]) started.
+work action Parameters of DexingOutputSplitTransform (Thread[Execution worker,5,main]) started.
+work action Parameters of IdentityTransform (Thread[Execution worker,5,main]) started.
+work action Parameters of DexingOutputSplitTransform (Thread[Execution worker,5,main]) started.
+work action Parameters of ExtractAarTransform (Thread[Execution worker,5,main]) started.
+work action Parameters of ExtractAarTransform (Thread[Execution worker,5,main]) started.
+Resolve mutations for :app:preBuild (Thread[included builds,5,main]) started.
+:app:preBuild (Thread[included builds,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[included builds,5,main]) started.
+:app:preDebugBuild (Thread[included builds,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:mergeDebugNativeDebugMetadata (Thread[included builds,5,main]) started.
+:app:mergeDebugNativeDebugMetadata (Thread[included builds,5,main]) started.
+
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+Skipping task ':app:mergeDebugNativeDebugMetadata' as it has no source files and no previous output files.
+Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[included builds,5,main]) started.
+:app:checkKotlinGradlePluginConfigurationErrors (Thread[included builds,5,main]) started.
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':app:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :monerokit:preBuild (Thread[included builds,5,main]) started.
+:monerokit:preBuild (Thread[included builds,5,main]) started.
+
+> Task :monerokit:preBuild UP-TO-DATE
+Skipping task ':monerokit:preBuild' as it has no actions.
+Resolve mutations for :monerokit:preDebugBuild (Thread[included builds,5,main]) started.
+:monerokit:preDebugBuild (Thread[Execution worker,5,main]) started.
+
+> Task :monerokit:preDebugBuild UP-TO-DATE
+Skipping task ':monerokit:preDebugBuild' as it has no actions.
+Resolve mutations for :monerokit:writeDebugAarMetadata (Thread[Execution worker,5,main]) started.
+:monerokit:writeDebugAarMetadata (Thread[Execution worker,5,main]) started.
+
+> Task :monerokit:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':monerokit:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':monerokit:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :monerokit) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[Execution worker,5,main]) started.
+:app:checkDebugAarMetadata (Thread[Execution worker,5,main]) started.
+
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:checkDebugAarMetadata' as it is up-to-date.
+Resolve mutations for :app:generateDebugResValues (Thread[Execution worker,5,main]) started.
+:app:generateDebugResValues (Thread[Execution worker,5,main]) started.
+
+> Task :app:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':app:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :monerokit:generateDebugResValues (Thread[Execution worker,5,main]) started.
+:monerokit:generateDebugResValues (Thread[Execution worker,5,main]) started.
+
+> Task :monerokit:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':monerokit:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':monerokit:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :monerokit:generateDebugResources (Thread[Execution worker,5,main]) started.
+:monerokit:generateDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :monerokit:generateDebugResources UP-TO-DATE
+Caching disabled for task ':monerokit:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':monerokit:generateDebugResources' as it is up-to-date.
+Resolve mutations for :monerokit:packageDebugResources (Thread[Execution worker,5,main]) started.
+:monerokit:packageDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :monerokit:packageDebugResources UP-TO-DATE
+Caching disabled for task ':monerokit:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':monerokit:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :monerokit) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :app:mapDebugSourceSetPaths (Thread[Execution worker,5,main]) started.
+:app:mapDebugSourceSetPaths (Thread[Execution worker,5,main]) started.
+
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:mapDebugSourceSetPaths' as it is up-to-date.
+Resolve mutations for :app:generateDebugResources (Thread[Execution worker,5,main]) started.
+:app:generateDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :app:generateDebugResources UP-TO-DATE
+Caching disabled for task ':app:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResources' as it is up-to-date.
+Resolve mutations for :app:mergeDebugResources (Thread[Execution worker Thread 3,5,main]) started.
+:app:mergeDebugResources (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:mergeDebugResources UP-TO-DATE
+Caching disabled for task ':app:mergeDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:mergeDebugResources' as it is up-to-date.
+Resolve mutations for :app:packageDebugResources (Thread[Execution worker Thread 3,5,main]) started.
+:app:packageDebugResources (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:packageDebugResources UP-TO-DATE
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:packageDebugResources' as it is up-to-date.
+Resolve mutations for :app:parseDebugLocalResources (Thread[Execution worker Thread 3,5,main]) started.
+:app:parseDebugLocalResources (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':app:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[Execution worker Thread 3,5,main]) started.
+:app:createDebugCompatibleScreenManifests (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:createDebugCompatibleScreenManifests' as it is up-to-date.
+Resolve mutations for :app:extractDeepLinksDebug (Thread[Execution worker Thread 3,5,main]) started.
+:app:extractDeepLinksDebug (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':app:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':app:extractDeepLinksDebug' as it is up-to-date.
+Resolve mutations for :monerokit:extractDeepLinksDebug (Thread[Execution worker Thread 3,5,main]) started.
+:monerokit:extractDeepLinksDebug (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :monerokit:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':monerokit:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':monerokit:extractDeepLinksDebug' as it is up-to-date.
+work action resolve navigation.json (project :monerokit) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :monerokit:processDebugManifest (Thread[Execution worker Thread 3,5,main]) started.
+:monerokit:processDebugManifest (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :monerokit:processDebugManifest UP-TO-DATE
+Caching disabled for task ':monerokit:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':monerokit:processDebugManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :monerokit) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :app:processDebugMainManifest (Thread[Execution worker Thread 3,5,main]) started.
+:app:processDebugMainManifest (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:processDebugMainManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugMainManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugMainManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifest (Thread[Execution worker Thread 3,5,main]) started.
+:app:processDebugManifest (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:processDebugManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifestForPackage (Thread[Execution worker Thread 3,5,main]) started.
+:app:processDebugManifestForPackage (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+Custom actions are attached to task ':app:processDebugManifestForPackage'.
+Caching disabled for task ':app:processDebugManifestForPackage' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifestForPackage' as it is up-to-date.
+Resolve mutations for :monerokit:compileDebugLibraryResources (Thread[Execution worker Thread 3,5,main]) started.
+:monerokit:compileDebugLibraryResources (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :monerokit:compileDebugLibraryResources UP-TO-DATE
+Caching disabled for task ':monerokit:compileDebugLibraryResources' because:
+  Build cache is disabled
+Skipping task ':monerokit:compileDebugLibraryResources' as it is up-to-date.
+work action resolve out (project :monerokit) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :monerokit:parseDebugLocalResources (Thread[Execution worker Thread 3,5,main]) started.
+:monerokit:parseDebugLocalResources (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :monerokit:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':monerokit:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':monerokit:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :monerokit:generateDebugRFile (Thread[Execution worker Thread 3,5,main]) started.
+:monerokit:generateDebugRFile (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :monerokit:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':monerokit:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':monerokit:generateDebugRFile' as it is up-to-date.
+work action resolve package-aware-r.txt (project :monerokit) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :app:processDebugResources (Thread[Execution worker Thread 3,5,main]) started.
+:app:processDebugResources (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :monerokit:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 5,5,main]) started.
+:monerokit:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :monerokit:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':monerokit:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :monerokit:compileDebugKotlin (Thread[Execution worker Thread 5,5,main]) started.
+:monerokit:compileDebugKotlin (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :monerokit:compileDebugKotlin NO-SOURCE
+Skipping task ':monerokit:compileDebugKotlin' as it has no source files and no previous output files.
+Resolve mutations for :monerokit:javaPreCompileDebug (Thread[Execution worker Thread 5,5,main]) started.
+:monerokit:javaPreCompileDebug (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :monerokit:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':monerokit:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':monerokit:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :monerokit:compileDebugJavaWithJavac (Thread[Execution worker Thread 5,5,main]) started.
+:monerokit:compileDebugJavaWithJavac (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :monerokit:compileDebugJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':monerokit:compileDebugJavaWithJavac'.
+Caching disabled for task ':monerokit:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':monerokit:compileDebugJavaWithJavac' as it is up-to-date.
+No compile result for :monerokit:compileDebugJavaWithJavac
+Resolve mutations for :monerokit:bundleLibCompileToJarDebug (Thread[Execution worker Thread 5,5,main]) started.
+:monerokit:bundleLibCompileToJarDebug (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :monerokit:bundleLibCompileToJarDebug UP-TO-DATE
+Caching disabled for task ':monerokit:bundleLibCompileToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':monerokit:bundleLibCompileToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project :monerokit) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :app:javaPreCompileDebug (Thread[Execution worker Thread 5,5,main]) started.
+:app:javaPreCompileDebug (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':app:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':app:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :app:mergeDebugShaders (Thread[included builds,5,main]) started.
+:app:mergeDebugShaders (Thread[included builds,5,main]) started.
+
+> Task :app:mergeDebugShaders UP-TO-DATE
+Caching disabled for task ':app:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':app:mergeDebugShaders' as it is up-to-date.
+Resolve mutations for :app:compileDebugShaders (Thread[included builds,5,main]) started.
+:app:compileDebugShaders (Thread[included builds,5,main]) started.
+
+> Task :app:compileDebugShaders NO-SOURCE
+Skipping task ':app:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :app:generateDebugAssets (Thread[included builds,5,main]) started.
+:app:generateDebugAssets (Thread[included builds,5,main]) started.
+
+> Task :app:generateDebugAssets UP-TO-DATE
+Skipping task ':app:generateDebugAssets' as it has no actions.
+Resolve mutations for :monerokit:mergeDebugShaders (Thread[included builds,5,main]) started.
+:monerokit:mergeDebugShaders (Thread[included builds,5,main]) started.
+
+> Task :monerokit:mergeDebugShaders UP-TO-DATE
+Caching disabled for task ':monerokit:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':monerokit:mergeDebugShaders' as it is up-to-date.
+Resolve mutations for :monerokit:compileDebugShaders (Thread[included builds,5,main]) started.
+:monerokit:compileDebugShaders (Thread[included builds,5,main]) started.
+
+> Task :monerokit:compileDebugShaders NO-SOURCE
+Skipping task ':monerokit:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :monerokit:generateDebugAssets (Thread[included builds,5,main]) started.
+:monerokit:generateDebugAssets (Thread[included builds,5,main]) started.
+
+> Task :monerokit:generateDebugAssets UP-TO-DATE
+Skipping task ':monerokit:generateDebugAssets' as it has no actions.
+Resolve mutations for :monerokit:mergeDebugAssets (Thread[included builds,5,main]) started.
+:monerokit:mergeDebugAssets (Thread[included builds,5,main]) started.
+
+> Task :monerokit:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':monerokit:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':monerokit:mergeDebugAssets' as it is up-to-date.
+work action resolve mergeDebugAssets (project :monerokit) (Thread[included builds,5,main]) started.
+Resolve mutations for :app:mergeDebugAssets (Thread[included builds,5,main]) started.
+:app:mergeDebugAssets (Thread[included builds,5,main]) started.
+
+> Task :app:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':app:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':app:mergeDebugAssets' as it is up-to-date.
+Resolve mutations for :app:compressDebugAssets (Thread[included builds,5,main]) started.
+:app:compressDebugAssets (Thread[included builds,5,main]) started.
+
+> Task :app:compressDebugAssets UP-TO-DATE
+Caching disabled for task ':app:compressDebugAssets' because:
+  Build cache is disabled
+Skipping task ':app:compressDebugAssets' as it is up-to-date.
+Resolve mutations for :monerokit:processDebugJavaRes (Thread[included builds,5,main]) started.
+:monerokit:processDebugJavaRes (Thread[included builds,5,main]) started.
+
+> Task :monerokit:processDebugJavaRes UP-TO-DATE
+file or directory '/Users/chyngyz/projects/monero-kit-android/monerokit/src/main/resources', not found
+file or directory '/Users/chyngyz/projects/monero-kit-android/monerokit/src/debug/resources', not found
+file or directory '/Users/chyngyz/projects/monero-kit-android/monerokit/src/main/resources', not found
+file or directory '/Users/chyngyz/projects/monero-kit-android/monerokit/src/debug/resources', not found
+Caching disabled for task ':monerokit:processDebugJavaRes' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':monerokit:processDebugJavaRes' as it is up-to-date.
+work action resolve out (project :monerokit) (Thread[included builds,5,main]) started.
+Resolve mutations for :app:checkDebugDuplicateClasses (Thread[Execution worker,5,main]) started.
+:app:checkDebugDuplicateClasses (Thread[Execution worker,5,main]) started.
+
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+Caching disabled for task ':app:checkDebugDuplicateClasses' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:checkDebugDuplicateClasses' as it is up-to-date.
+Resolve mutations for :app:desugarDebugFileDependencies (Thread[Execution worker Thread 5,5,main]) started.
+:app:desugarDebugFileDependencies (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+Caching disabled for task ':app:desugarDebugFileDependencies' because:
+  Build cache is disabled
+Skipping task ':app:desugarDebugFileDependencies' as it is up-to-date.
+Resolve mutations for :app:mergeExtDexDebug (Thread[Execution worker Thread 5,5,main]) started.
+:app:mergeExtDexDebug (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:mergeExtDexDebug UP-TO-DATE
+Caching disabled for task ':app:mergeExtDexDebug' because:
+  Build cache is disabled
+Skipping task ':app:mergeExtDexDebug' as it is up-to-date.
+Resolve mutations for :monerokit:bundleLibRuntimeToDirDebug (Thread[Execution worker Thread 5,5,main]) started.
+:monerokit:bundleLibRuntimeToDirDebug (Thread[Execution worker,5,main]) started.
+
+> Task :monerokit:bundleLibRuntimeToDirDebug UP-TO-DATE
+Caching disabled for task ':monerokit:bundleLibRuntimeToDirDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':monerokit:bundleLibRuntimeToDirDebug' as it is up-to-date.
+work action resolve bundleLibRuntimeToDirDebug (project :monerokit) (Thread[Execution worker,5,main]) started.
+ClassesDirToClassesTransform (Thread[Execution worker,5,main]) started.
+Resolve mutations for :app:mergeDebugJniLibFolders (Thread[Execution worker Thread 5,5,main]) started.
+:app:mergeDebugJniLibFolders (Thread[Execution worker Thread 5,5,main]) started.
+DexingNoClasspathTransform (Thread[Execution worker,5,main]) started.
+
+> Transform bundleLibRuntimeToDirDebug (project :monerokit) with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug as it is up-to-date.
+
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+Caching disabled for task ':app:mergeDebugJniLibFolders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':app:mergeDebugJniLibFolders' as it is up-to-date.
+Resolve mutations for :app:mergeLibDexDebug (Thread[Execution worker Thread 5,5,main]) started.
+:app:mergeLibDexDebug (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :monerokit:configureCMakeDebug[arm64-v8a] (Thread[Execution worker,5,main]) started.
+:monerokit:configureCMakeDebug[arm64-v8a] (Thread[Execution worker,5,main]) started.
+
+> Task :monerokit:configureCMakeDebug[arm64-v8a]
+Caching disabled for task ':monerokit:configureCMakeDebug[arm64-v8a]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':monerokit:configureCMakeDebug[arm64-v8a]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: /Users/chyngyz/projects/monero-kit-android/monerokit/CMakeLists.txt debug|arm64-v8a : Start JSON generation. Platform version: 27 min SDK version: arm64-v8a
+C/C++: /Users/chyngyz/projects/monero-kit-android/monerokit/CMakeLists.txt debug|arm64-v8a : JSON '/Users/chyngyz/projects/monero-kit-android/monerokit/.cxx/Debug/3f5r4j1q/arm64-v8a/android_gradle_build.json' was up-to-date
+C/C++: /Users/chyngyz/projects/monero-kit-android/monerokit/CMakeLists.txt debug|arm64-v8a : JSON generation completed without problems
+C/C++: /Users/chyngyz/projects/monero-kit-android/monerokit/CMakeLists.txt debug|arm64-v8a : Writing build model to /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/cxx/Debug/3f5r4j1q/logs/arm64-v8a/build_model.json
+Resolve mutations for :monerokit:buildCMakeDebug[arm64-v8a] (Thread[Execution worker,5,main]) started.
+:monerokit:buildCMakeDebug[arm64-v8a] (Thread[Execution worker,5,main]) started.
+
+> Task :app:mergeLibDexDebug
+Caching disabled for task ':app:mergeLibDexDebug' because:
+  Build cache is disabled
+Task ':app:mergeLibDexDebug' is not up-to-date because:
+  Output property 'outputDir' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/dex/debug/mergeLibDexDebug has been removed.
+  Output property 'outputDir' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/dex/debug/mergeLibDexDebug/0 has been removed.
+  Output property 'outputDir' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/dex/debug/mergeLibDexDebug/1 has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:mergeLibDexDebug'.
+Merging to '/Users/chyngyz/projects/monero-kit-android/app/build/intermediates/dex/debug/mergeLibDexDebug/7' with D8 from all or a subset of dex files in /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, and from all global synthetics files in 
+Merging to '/Users/chyngyz/projects/monero-kit-android/app/build/intermediates/dex/debug/mergeLibDexDebug/6' with D8 from all or a subset of dex files in /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, and from all global synthetics files in 
+Merging to '/Users/chyngyz/projects/monero-kit-android/app/build/intermediates/dex/debug/mergeLibDexDebug/13' with D8 from all or a subset of dex files in /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug, and from all global synthetics files in 
+
+> Task :app:processDebugResources
+Caching disabled for task ':app:processDebugResources' because:
+  Build cache is disabled
+Task ':app:processDebugResources' is not up-to-date because:
+  Output property 'RClassOutputJar' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar has been removed.
+  Output property 'linkedResourcesOutputDir' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources has been removed.
+  Output property 'linkedResourcesOutputDir' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/linked-resources-binary-format-debug.ap_ has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:processDebugResources'.
+AAPT2 aapt2-8.11.1-12782657-osx Daemon #0: starting
+Aapt output file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/linked-resources-binary-format-debug.ap_
+
+> Task :monerokit:buildCMakeDebug[arm64-v8a]
+Caching disabled for task ':monerokit:buildCMakeDebug[arm64-v8a]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':monerokit:buildCMakeDebug[arm64-v8a]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: starting build
+C/C++: reading expected JSONs
+C/C++: done reading expected JSONs
+C/C++: executing build commands for targets that produce .so files or executables
+C/C++: evaluate miniconfig
+C/C++: evaluate library monerujo (arm64-v8a)
+C/C++: building target library monerujo because no targets are specified.
+C/C++: about to build targets monerujo
+C/C++: Build monerujo
+C/C++: /Users/chyngyz/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/chyngyz/projects/monero-kit-android/monerokit/.cxx/Debug/3f5r4j1q/arm64-v8a \
+  monerujo
+
+Starting process 'command '/Users/chyngyz/Library/Android/sdk/cmake/3.22.1/bin/ninja''. Working directory: /Users/chyngyz/projects/monero-kit-android/monerokit Command: /Users/chyngyz/Library/Android/sdk/cmake/3.22.1/bin/ninja -C /Users/chyngyz/projects/monero-kit-android/monerokit/.cxx/Debug/3f5r4j1q/arm64-v8a monerujo
+Successfully started process 'command '/Users/chyngyz/Library/Android/sdk/cmake/3.22.1/bin/ninja''
+C/C++: ninja: Entering directory `/Users/chyngyz/projects/monero-kit-android/monerokit/.cxx/Debug/3f5r4j1q/arm64-v8a'
+C/C++: : && /Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android --gcc-toolchain=/Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/sysroot -fPIC -isystem /Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=27 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -std=c++11 -O0 -fno-limit-debug-info  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -nostdlib++ --sysroot /Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/platforms/android-27/arch-arm64 -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -L/Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/sources/cxx-stl/llvm-libc++/libs/arm64-v8a -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now -shared -Wl,-soname,libmonerujo.so -o ../../../../build/intermediates/cxx/Debug/3f5r4j1q/obj/arm64-v8a/libmonerujo.so CMakeFiles/monerujo.dir/src/main/cpp/monerujo.cpp.o  ../../../../../external-libs/arm64-v8a/monero/libwallet_api.a  ../../../../../external-libs/arm64-v8a/monero/libwallet.a  ../../../../../external-libs/arm64-v8a/monero/libcryptonote_core.a  ../../../../../external-libs/arm64-v8a/monero/libcryptonote_basic.a  ../../../../../external-libs/arm64-v8a/monero/libcryptonote_format_utils_basic.a  ../../../../../external-libs/arm64-v8a/monero/libmnemonics.a  ../../../../../external-libs/arm64-v8a/monero/libringct.a  ../../../../../external-libs/arm64-v8a/monero/libringct_basic.a  ../../../../../external-libs/arm64-v8a/monero/libnet.a  ../../../../../external-libs/arm64-v8a/monero/libcommon.a  ../../../../../external-libs/arm64-v8a/monero/libcncrypto.a  ../../../../../external-libs/arm64-v8a/monero/libblockchain_db.a  ../../../../../external-libs/arm64-v8a/monero/liblmdb.a  ../../../../../external-libs/arm64-v8a/monero/libeasylogging.a  ../../../../../external-libs/arm64-v8a/libunbound.a  ../../../../../external-libs/arm64-v8a/monero/libepee.a  ../../../../../external-libs/arm64-v8a/monero/libblocks.a  ../../../../../external-libs/arm64-v8a/monero/libcheckpoints.a  ../../../../../external-libs/arm64-v8a/monero/libdevice.a  ../../../../../external-libs/arm64-v8a/monero/libdevice_trezor.a  ../../../../../external-libs/arm64-v8a/monero/libmultisig.a  ../../../../../external-libs/arm64-v8a/monero/libversion.a  ../../../../../external-libs/arm64-v8a/monero/librandomx.a  ../../../../../external-libs/arm64-v8a/monero/libhardforks.a  ../../../../../external-libs/arm64-v8a/monero/librpc_base.a  ../../../../../external-libs/arm64-v8a/libboost_chrono.a  ../../../../../external-libs/arm64-v8a/libboost_date_time.a  ../../../../../external-libs/arm64-v8a/libboost_filesystem.a  ../../../../../external-libs/arm64-v8a/libboost_program_options.a  ../../../../../external-libs/arm64-v8a/libboost_regex.a  ../../../../../external-libs/arm64-v8a/libboost_serialization.a  ../../../../../external-libs/arm64-v8a/libboost_system.a  ../../../../../external-libs/arm64-v8a/libboost_thread.a  ../../../../../external-libs/arm64-v8a/libboost_wserialization.a  ../../../../../external-libs/arm64-v8a/libssl.a  ../../../../../external-libs/arm64-v8a/libcrypto.a  ../../../../../external-libs/arm64-v8a/libsodium.a  /Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/platforms/android-27/arch-arm64/usr/lib/liblog.so  -latomic -lm "/Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/sources/cxx-stl/llvm-libc++/libs/arm64-v8a/libc++_shared.so" && :
+C/C++: clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+C/C++: ninja: build stopped: subcommand failed.
+C/C++: Received process result: 1
+
+> Task :monerokit:buildCMakeDebug[arm64-v8a] FAILED
+AAPT2 aapt2-8.11.1-12782657-osx Daemon #0: shutdown
+
+[Incubating] Problems report is available at: file:///Users/chyngyz/projects/monero-kit-android/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+40 actionable tasks: 4 executed, 36 up-to-date
+Watched directory hierarchies: [/Users/chyngyz/projects/monero-kit-android]

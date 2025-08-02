@@ -1,0 +1,1350 @@
+Initialized native services in: /Users/chyngyz/.gradle/native
+Initialized jansi services in: /Users/chyngyz/.gradle/native
+Found daemon DaemonInfo{pid=54075, address=[5cf6a917-fbb1-4566-8d54-8760db74c01f port:55011, addresses:[/127.0.0.1]], state=Idle, lastBusy=1752840066231, context=DefaultDaemonContext[uid=540b7a3e-3c32-4813-8e51-74ae9c5bed28,javaHome=/Applications/Android Studio.app/Contents/jbr/Contents/Home,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/Users/chyngyz/.gradle/daemon,pid=54075,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=KG,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{jvmCriteria=/Library/Java/JavaVirtualMachines/temurin-18.jdk/Contents/Home (no JDK specified, using current Java home), daemonOpts=[-Xmx2048m, -Dfile.encoding=UTF-8, -Duser.country=KG, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=540b7a3e-3c32-4813-8e51-74ae9c5bed28,javaHome=/Applications/Android Studio.app/Contents/jbr/Contents/Home,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/Users/chyngyz/.gradle/daemon,pid=54075,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=KG,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 65531). The daemon log file: /Users/chyngyz/.gradle/daemon/8.13/daemon-65531.out.log
+Starting 6th build in daemon [uptime: 9 mins 11.711 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 8 worker leases.
+Now considering [/Users/chyngyz/projects/monero-kit-android] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file '/Users/chyngyz/projects/monero-kit-android/settings.gradle'.
+Projects loaded. Root project using build file '/Users/chyngyz/projects/monero-kit-android/build.gradle'.
+Included projects: [root project 'monero-kit-android', project ':app', project ':monerokit']
+
+> Configure project :
+Evaluating root project 'monero-kit-android' using build file '/Users/chyngyz/projects/monero-kit-android/build.gradle'.
+Resolved plugin [id: 'com.android.application', version: '8.11.1', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.0.21', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.0.21', apply: false]
+Resolved plugin [id: 'com.android.library', version: '8.11.1', apply: false]
+
+> Configure project :app
+Evaluating project ':app' using build file '/Users/chyngyz/projects/monero-kit-android/app/build.gradle'.
+Resolved plugin [id: 'com.android.application', version: '8.11.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.0.21']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.0.21']
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :monerokit
+Evaluating project ':monerokit' using build file '/Users/chyngyz/projects/monero-kit-android/monerokit/build.gradle'.
+Resolved plugin [id: 'com.android.library', version: '8.11.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.0.21']
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [17.2.4988734]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/chyngyz/Library/Android/sdk
+All projects evaluated.
+Task name matched 'build'
+Selected primary task 'build' from project :
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugKotlin
+Tasks to be executed: [task ':app:preBuild', task ':app:preDebugBuild', task ':app:mergeDebugNativeDebugMetadata', task ':app:checkKotlinGradlePluginConfigurationErrors', task ':monerokit:preBuild', task ':monerokit:preDebugBuild', task ':monerokit:writeDebugAarMetadata', task ':app:checkDebugAarMetadata', task ':app:generateDebugResValues', task ':monerokit:generateDebugResValues', task ':monerokit:generateDebugResources', task ':monerokit:packageDebugResources', task ':app:mapDebugSourceSetPaths', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':monerokit:extractDeepLinksDebug', task ':monerokit:processDebugManifest', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':monerokit:compileDebugLibraryResources', task ':monerokit:parseDebugLocalResources', task ':monerokit:generateDebugRFile', task ':app:processDebugResources', task ':monerokit:checkKotlinGradlePluginConfigurationErrors', task ':monerokit:compileDebugKotlin', task ':monerokit:javaPreCompileDebug', task ':monerokit:compileDebugJavaWithJavac', task ':monerokit:bundleLibCompileToJarDebug', task ':app:compileDebugKotlin', task ':app:javaPreCompileDebug', task ':app:compileDebugJavaWithJavac', task ':app:mergeDebugShaders', task ':app:compileDebugShaders', task ':app:generateDebugAssets', task ':monerokit:mergeDebugShaders', task ':monerokit:compileDebugShaders', task ':monerokit:generateDebugAssets', task ':monerokit:mergeDebugAssets', task ':app:mergeDebugAssets', task ':app:compressDebugAssets', task ':app:processDebugJavaRes', task ':monerokit:processDebugJavaRes', task ':app:mergeDebugJavaResource', task ':app:checkDebugDuplicateClasses', task ':app:desugarDebugFileDependencies', task ':app:mergeExtDexDebug', task ':monerokit:bundleLibRuntimeToDirDebug', task ':app:mergeLibDexDebug', task ':app:dexBuilderDebug', task ':app:mergeProjectDexDebug', task ':app:mergeDebugJniLibFolders', task ':monerokit:configureCMakeDebug[arm64-v8a]', task ':monerokit:buildCMakeDebug[arm64-v8a]', task ':monerokit:configureCMakeDebug[armeabi-v7a]', task ':monerokit:buildCMakeDebug[armeabi-v7a]', task ':monerokit:mergeDebugJniLibFolders', task ':monerokit:mergeDebugNativeLibs', task ':monerokit:copyDebugJniLibsProjectOnly', task ':app:mergeDebugNativeLibs', task ':app:stripDebugDebugSymbols', task ':app:validateSigningDebug', task ':app:writeDebugAppMetadata', task ':app:writeDebugSigningConfigVersions', task ':app:packageDebug', task ':app:createDebugApkListingFileRedirect', task ':app:assembleDebug', task ':app:preReleaseBuild', task ':app:mergeReleaseJniLibFolders', task ':monerokit:preReleaseBuild', task ':monerokit:configureCMakeRelWithDebInfo[arm64-v8a]', task ':monerokit:buildCMakeRelWithDebInfo[arm64-v8a]', task ':monerokit:configureCMakeRelWithDebInfo[armeabi-v7a]', task ':monerokit:buildCMakeRelWithDebInfo[armeabi-v7a]', task ':monerokit:mergeReleaseJniLibFolders', task ':monerokit:mergeReleaseNativeLibs', task ':monerokit:copyReleaseJniLibsProjectOnly', task ':app:mergeReleaseNativeLibs', task ':app:stripReleaseDebugSymbols', task ':app:extractReleaseNativeSymbolTables', task ':app:mergeReleaseNativeDebugMetadata', task ':monerokit:generateReleaseResValues', task ':monerokit:generateReleaseResources', task ':monerokit:packageReleaseResources', task ':monerokit:parseReleaseLocalResources', task ':monerokit:generateReleaseRFile', task ':monerokit:compileReleaseKotlin', task ':monerokit:javaPreCompileRelease', task ':monerokit:compileReleaseJavaWithJavac', task ':monerokit:bundleLibRuntimeToDirRelease', task ':app:checkReleaseDuplicateClasses', task ':app:buildKotlinToolingMetadata', task ':monerokit:writeReleaseAarMetadata', task ':app:checkReleaseAarMetadata', task ':app:generateReleaseResValues', task ':app:mapReleaseSourceSetPaths', task ':app:generateReleaseResources', task ':app:mergeReleaseResources', task ':app:packageReleaseResources', task ':app:parseReleaseLocalResources', task ':app:createReleaseCompatibleScreenManifests', task ':app:extractDeepLinksRelease', task ':monerokit:extractDeepLinksRelease', task ':monerokit:processReleaseManifest', task ':app:processReleaseMainManifest', task ':app:processReleaseManifest', task ':app:processReleaseManifestForPackage', task ':monerokit:compileReleaseLibraryResources', task ':app:processReleaseResources', task ':monerokit:bundleLibCompileToJarRelease', task ':app:compileReleaseKotlin', task ':app:javaPreCompileRelease', task ':app:compileReleaseJavaWithJavac', task ':app:dexBuilderRelease', task ':app:desugarReleaseFileDependencies', task ':app:mergeReleaseStartupProfile', task ':app:mergeExtDexRelease', task ':app:mergeDexRelease', task ':monerokit:prepareReleaseArtProfile', task ':app:mergeReleaseArtProfile', task ':monerokit:bundleLibRuntimeToJarRelease', task ':app:mergeReleaseGlobalSynthetics', task ':app:compileReleaseArtProfile', task ':app:mergeReleaseShaders', task ':app:compileReleaseShaders', task ':app:generateReleaseAssets', task ':monerokit:mergeReleaseShaders', task ':monerokit:compileReleaseShaders', task ':monerokit:generateReleaseAssets', task ':monerokit:mergeReleaseAssets', task ':app:mergeReleaseAssets', task ':app:compressReleaseAssets', task ':app:extractReleaseVersionControlInfo', task ':app:extractProguardFiles', task ':monerokit:processReleaseJavaRes', task ':monerokit:createFullJarRelease', task ':monerokit:extractProguardFiles', task ':monerokit:generateReleaseLintModel', task ':monerokit:prepareLintJarForPublish', task ':app:generateReleaseLintVitalReportModel', task ':monerokit:stripReleaseDebugSymbols', task ':monerokit:copyReleaseJniLibsProjectAndLocalJars', task ':monerokit:extractDeepLinksForAarRelease', task ':monerokit:extractReleaseAnnotations', task ':monerokit:mergeReleaseGeneratedProguardFiles', task ':monerokit:mergeReleaseConsumerProguardFiles', task ':monerokit:mergeReleaseJavaResource', task ':monerokit:syncReleaseLibJars', task ':monerokit:bundleReleaseLocalLintAar', task ':monerokit:lintVitalAnalyzeRelease', task ':monerokit:writeReleaseLintModelMetadata', task ':app:lintVitalAnalyzeRelease', task ':monerokit:generateReleaseLintVitalModel', task ':app:lintVitalReportRelease', task ':app:lintVitalRelease', task ':app:processReleaseJavaRes', task ':app:mergeReleaseJavaResource', task ':app:optimizeReleaseResources', task ':app:collectReleaseDependencies', task ':app:sdkReleaseDependencyData', task ':app:writeReleaseAppMetadata', task ':app:writeReleaseSigningConfigVersions', task ':app:packageRelease', task ':app:createReleaseApkListingFileRedirect', task ':app:assembleRelease', task ':app:assemble', task ':monerokit:stripDebugDebugSymbols', task ':monerokit:copyDebugJniLibsProjectAndLocalJars', task ':monerokit:extractDebugAnnotations', task ':monerokit:extractDeepLinksForAarDebug', task ':monerokit:mergeDebugGeneratedProguardFiles', task ':monerokit:mergeDebugConsumerProguardFiles', task ':monerokit:prepareDebugArtProfile', task ':monerokit:mergeDebugJavaResource', task ':monerokit:syncDebugLibJars', task ':monerokit:bundleDebugLocalLintAar', task ':app:bundleDebugClassesToCompileJar', task ':app:preDebugAndroidTestBuild', task ':app:generateDebugAndroidTestResValues', task ':monerokit:bundleLibRuntimeToJarDebug', task ':monerokit:createFullJarDebug', task ':monerokit:writeDebugLintModelMetadata', task ':app:generateDebugAndroidTestLintModel', task ':monerokit:generateDebugLintModel', task ':app:generateDebugLintReportModel', task ':app:preDebugUnitTestBuild', task ':app:generateDebugUnitTestLintModel', task ':monerokit:lintAnalyzeDebug', task ':app:lintAnalyzeDebug', task ':app:lintAnalyzeDebugAndroidTest', task ':app:lintAnalyzeDebugUnitTest', task ':monerokit:preDebugAndroidTestBuild', task ':monerokit:generateDebugAndroidTestResValues', task ':monerokit:generateDebugAndroidTestLintModel', task ':monerokit:preDebugUnitTestBuild', task ':monerokit:generateDebugUnitTestLintModel', task ':monerokit:lintAnalyzeDebugAndroidTest', task ':monerokit:lintAnalyzeDebugUnitTest', task ':app:lintReportDebug', task ':app:lintDebug', task ':app:lint', task ':app:bundleDebugClassesToRuntimeJar', task ':app:compileDebugUnitTestKotlin', task ':app:javaPreCompileDebugUnitTest', task ':app:compileDebugUnitTestJavaWithJavac', task ':app:processDebugUnitTestJavaRes', task ':app:testDebugUnitTest', task ':app:bundleReleaseClassesToRuntimeJar', task ':app:bundleReleaseClassesToCompileJar', task ':app:compileReleaseUnitTestKotlin', task ':app:preReleaseUnitTestBuild', task ':app:javaPreCompileReleaseUnitTest', task ':app:compileReleaseUnitTestJavaWithJavac', task ':app:processReleaseUnitTestJavaRes', task ':app:testReleaseUnitTest', task ':app:test', task ':app:check', task ':app:build', task ':monerokit:bundleDebugAar', task ':monerokit:assembleDebug', task ':monerokit:bundleReleaseAar', task ':monerokit:mapReleaseSourceSetPaths', task ':monerokit:mergeReleaseResources', task ':monerokit:verifyReleaseResources', task ':monerokit:assembleRelease', task ':monerokit:assemble', task ':monerokit:generateDebugLintReportModel', task ':monerokit:lintReportDebug', task ':monerokit:lintDebug', task ':monerokit:lint', task ':monerokit:generateDebugUnitTestStubRFile', task ':monerokit:compileDebugUnitTestKotlin', task ':monerokit:javaPreCompileDebugUnitTest', task ':monerokit:compileDebugUnitTestJavaWithJavac', task ':monerokit:processDebugUnitTestJavaRes', task ':monerokit:testDebugUnitTest', task ':monerokit:preReleaseUnitTestBuild', task ':monerokit:generateReleaseUnitTestStubRFile', task ':monerokit:compileReleaseUnitTestKotlin', task ':monerokit:javaPreCompileReleaseUnitTest', task ':monerokit:compileReleaseUnitTestJavaWithJavac', task ':monerokit:processReleaseUnitTestJavaRes', task ':monerokit:testReleaseUnitTest', task ':monerokit:test', task ':monerokit:check', task ':monerokit:build']
+Tasks that were excluded: []
+work action Parameters of ClassesDirToClassesTransform (Thread[Execution worker,5,main]) started.
+work action Parameters of DexingNoClasspathTransform (Thread[Execution worker,5,main]) started.
+work action Parameters of DexingNoClasspathTransform (Thread[Execution worker,5,main]) started.
+work action Parameters of DexingOutputSplitTransform (Thread[Execution worker,5,main]) started.
+work action Parameters of IdentityTransform (Thread[Execution worker Thread 2,5,main]) started.
+work action Parameters of DexingOutputSplitTransform (Thread[Execution worker Thread 2,5,main]) started.
+work action Parameters of ExtractAarTransform (Thread[Execution worker Thread 2,5,main]) started.
+work action Parameters of ExtractAarTransform (Thread[Execution worker Thread 2,5,main]) started.
+Resolve mutations for :app:preBuild (Thread[Execution worker Thread 2,5,main]) started.
+:app:preBuild (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[Execution worker Thread 2,5,main]) started.
+:app:preDebugBuild (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:mergeDebugNativeDebugMetadata (Thread[Execution worker Thread 2,5,main]) started.
+:app:mergeDebugNativeDebugMetadata (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+Skipping task ':app:mergeDebugNativeDebugMetadata' as it has no source files and no previous output files.
+Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 2,5,main]) started.
+:app:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':app:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :monerokit:preBuild (Thread[Execution worker Thread 2,5,main]) started.
+:monerokit:preBuild (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :monerokit:preBuild UP-TO-DATE
+Skipping task ':monerokit:preBuild' as it has no actions.
+Resolve mutations for :monerokit:preDebugBuild (Thread[Execution worker Thread 2,5,main]) started.
+:monerokit:preDebugBuild (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :monerokit:preDebugBuild UP-TO-DATE
+Skipping task ':monerokit:preDebugBuild' as it has no actions.
+Resolve mutations for :monerokit:writeDebugAarMetadata (Thread[Execution worker Thread 2,5,main]) started.
+:monerokit:writeDebugAarMetadata (Thread[Execution worker Thread 2,5,main]) started.
+Resolve mutations for :app:generateDebugResValues (Thread[Execution worker,5,main]) started.
+:app:generateDebugResValues (Thread[Execution worker,5,main]) started.
+
+> Task :monerokit:writeDebugAarMetadata
+Caching disabled for task ':monerokit:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':monerokit:writeDebugAarMetadata' is not up-to-date because:
+  Output property 'output' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties has been removed.
+
+> Task :app:generateDebugResValues
+Caching disabled for task ':app:generateDebugResValues' because:
+  Build cache is disabled
+Task ':app:generateDebugResValues' is not up-to-date because:
+  Output property 'outputDirectory' file /Users/chyngyz/projects/monero-kit-android/app/build/generated/res/resValues/debug has been removed.
+work action resolve aar-metadata.properties (project :monerokit) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[Execution worker Thread 6,5,main]) started.
+:app:checkDebugAarMetadata (Thread[Execution worker Thread 6,5,main]) started.
+Resolve mutations for :monerokit:generateDebugResValues (Thread[Execution worker,5,main]) started.
+:monerokit:generateDebugResValues (Thread[Execution worker,5,main]) started.
+
+> Task :monerokit:generateDebugResValues
+Caching disabled for task ':monerokit:generateDebugResValues' because:
+  Build cache is disabled
+Task ':monerokit:generateDebugResValues' is not up-to-date because:
+  Output property 'outputDirectory' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/generated/res/resValues/debug has been removed.
+Resolve mutations for :monerokit:generateDebugResources (Thread[Execution worker,5,main]) started.
+:monerokit:generateDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :monerokit:generateDebugResources
+Caching disabled for task ':monerokit:generateDebugResources' because:
+  Build cache is disabled
+Task ':monerokit:generateDebugResources' is not up-to-date because:
+  Output property 'validationReportFile' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt has been removed.
+Resolve mutations for :monerokit:packageDebugResources (Thread[Execution worker,5,main]) started.
+:monerokit:packageDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :monerokit:packageDebugResources
+Caching disabled for task ':monerokit:packageDebugResources' because:
+  Build cache is disabled
+Task ':monerokit:packageDebugResources' is not up-to-date because:
+  Output property 'dataBindingLayoutInfoOutFolder' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/data_binding_layout_info_type_package/debug/packageDebugResources/out has been removed.
+  Output property 'generatedPngsOutputDir' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/generated/res/pngs/debug has been removed.
+  Output property 'incrementalFolder' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/incremental/debug/packageDebugResources has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':monerokit:packageDebugResources'.
+[MergeResources] Inputs are non-incremental full task action.
+work action resolve packageDebugResources (project :monerokit) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :app:mapDebugSourceSetPaths (Thread[Execution worker,5,main]) started.
+:app:mapDebugSourceSetPaths (Thread[Execution worker,5,main]) started.
+
+> Task :app:checkDebugAarMetadata
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:checkDebugAarMetadata' is not up-to-date because:
+  Output property 'dummyOutputDirectory' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/aar_metadata_check/debug/checkDebugAarMetadata has been removed.
+
+> Task :app:mapDebugSourceSetPaths
+Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:mapDebugSourceSetPaths' is not up-to-date because:
+  Output property 'filepathMappingFile' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/source_set_path_map/debug/mapDebugSourceSetPaths/file-map.txt has been removed.
+Resolve mutations for :app:generateDebugResources (Thread[Execution worker,5,main]) started.
+:app:generateDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :app:generateDebugResources
+Caching disabled for task ':app:generateDebugResources' because:
+  Build cache is disabled
+Task ':app:generateDebugResources' is not up-to-date because:
+  Output property 'validationReportFile' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt has been removed.
+Resolve mutations for :app:mergeDebugResources (Thread[Execution worker,5,main]) started.
+:app:mergeDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :app:mergeDebugResources
+Caching disabled for task ':app:mergeDebugResources' because:
+  Build cache is disabled
+Task ':app:mergeDebugResources' is not up-to-date because:
+  Output property 'blameLogOutputFolder' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out has been removed.
+  Output property 'blameLogOutputFolder' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2 has been removed.
+  Output property 'blameLogOutputFolder' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/mergeDebugResources.json has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:mergeDebugResources'.
+[MergeResources] Inputs are non-incremental full task action.
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values/values.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values_values.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hi/values-hi.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hi_values-hi.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v16/values-v16.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v16_values-v16.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zh-rHK_values-zh-rHK.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v21/values-v21.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v21_values-v21.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt/values-pt.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pt_values-pt.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v18/values-v18.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v18_values-v18.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-is/values-is.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-is_values-is.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-es-rUS_values-es-rUS.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-watch-v21_values-watch-v21.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h360dp-land-v13/values-h360dp-land-v13.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-h360dp-land-v13_values-h360dp-land-v13.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v17/values-v17.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v17_values-v17.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-be/values-be.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-be_values-be.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-it/values-it.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-it_values-it.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pt-rPT_values-pt-rPT.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v23/values-v23.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v23_values-v23.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zu/values-zu.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zu_values-zu.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ru/values-ru.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ru_values-ru.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ka/values-ka.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ka_values-ka.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bg/values-bg.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-bg_values-bg.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-si/values-si.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-si_values-si.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-kk/values-kk.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-kk_values-kk.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v34/values-v34.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v34_values-v34.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-km/values-km.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-km_values-km.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pt-rBR_values-pt-rBR.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-kn/values-kn.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-kn_values-kn.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-cs/values-cs.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-cs_values-cs.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-tr/values-tr.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-tr_values-tr.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-h720dp-v13_values-h720dp-v13.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-de/values-de.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-de_values-de.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rAU_values-en-rAU.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ldrtl-v17/values-ldrtl-v17.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ldrtl-v17_values-ldrtl-v17.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mr/values-mr.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-mr_values-mr.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ur/values-ur.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ur_values-ur.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-uk/values-uk.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-uk_values-uk.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-el/values-el.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-el_values-el.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-vi/values-vi.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-vi_values-vi.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ms/values-ms.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ms_values-ms.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-nb/values-nb.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-nb_values-nb.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-nl/values-nl.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-nl_values-nl.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w400dp-port-v13/values-w400dp-port-v13.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-w400dp-port-v13_values-w400dp-port-v13.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zh-rCN_values-zh-rCN.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fi/values-fi.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fi_values-fi.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-land/values-land.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-land_values-land.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-watch-v20_values-watch-v20.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-small-v4_values-small-v4.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ldltr-v21_values-ldltr-v21.arsc.flat
+Compiling xml file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/drawable/ic_launcher_foreground.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/drawable_ic_launcher_foreground.xml.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-am/values-am.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-am_values-am.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-or/values-or.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-or_values-or.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ja/values-ja.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ja_values-ja.arsc.flat
+Compiling xml file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/mipmap-anydpi/ic_launcher.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-anydpi_ic_launcher.xml.flat
+Compiling xml file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/drawable/ic_launcher_background.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/drawable_ic_launcher_background.xml.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v26/values-v26.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v26_values-v26.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hr/values-hr.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hr_values-hr.arsc.flat
+Compiling file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-hdpi_ic_launcher_round.webp.flat
+Compiling file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/mipmap-mdpi/ic_launcher.webp to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-mdpi_ic_launcher.webp.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bn/values-bn.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-bn_values-bn.arsc.flat
+Compiling file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/mipmap-xhdpi/ic_launcher.webp to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-xhdpi_ic_launcher.webp.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w360dp-port-v13/values-w360dp-port-v13.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-w360dp-port-v13_values-w360dp-port-v13.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-iw/values-iw.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-iw_values-iw.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sk/values-sk.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sk_values-sk.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v22/values-v22.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v22_values-v22.arsc.flat
+
+Resolve mutations for :app:packageDebugResources (Thread[Execution worker Thread 5,5,main]) started.
+:app:packageDebugResources (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:packageDebugResources
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Task ':app:packageDebugResources' is not up-to-date because:
+  Output property 'dataBindingLayoutInfoOutFolder' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/data_binding_layout_info_type_package/debug/packageDebugResources/out has been removed.
+  Output property 'incrementalFolder' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/packageDebugResources has been removed.
+  Output property 'incrementalFolder' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:packageDebugResources'.
+[MergeResources] Inputs are non-incremental full task action.
+Resolve mutations for :app:parseDebugLocalResources (Thread[Execution worker Thread 5,5,main]) started.
+:app:parseDebugLocalResources (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[Execution worker Thread 4,5,main]) started.
+:app:createDebugCompatibleScreenManifests (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:createDebugCompatibleScreenManifests
+Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:createDebugCompatibleScreenManifests' is not up-to-date because:
+  Output property 'outputFolder' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests has been removed.
+  Output property 'outputFolder' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests/output-metadata.json has been removed.
+Resolve mutations for :app:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+:app:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:extractDeepLinksDebug
+Caching disabled for task ':app:extractDeepLinksDebug' because:
+  Build cache is disabled
+Task ':app:extractDeepLinksDebug' is not up-to-date because:
+  Output property 'navigationJson' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json has been removed.
+Resolve mutations for :monerokit:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+:monerokit:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :monerokit:extractDeepLinksDebug
+Caching disabled for task ':monerokit:extractDeepLinksDebug' because:
+  Build cache is disabled
+Task ':monerokit:extractDeepLinksDebug' is not up-to-date because:
+  Output property 'navigationJson' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json has been removed.
+work action resolve navigation.json (project :monerokit) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :monerokit:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+:monerokit:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :monerokit:compileDebugLibraryResources (Thread[Execution worker Thread 6,5,main]) started.
+:monerokit:compileDebugLibraryResources (Thread[Execution worker Thread 6,5,main]) started.
+Resolve mutations for :monerokit:parseDebugLocalResources (Thread[Execution worker Thread 3,5,main]) started.
+:monerokit:parseDebugLocalResources (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :monerokit:compileDebugLibraryResources
+Caching disabled for task ':monerokit:compileDebugLibraryResources' because:
+  Build cache is disabled
+Task ':monerokit:compileDebugLibraryResources' is not up-to-date because:
+  Output property 'outputDir' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/compiled_local_resources/debug/compileDebugLibraryResources/out has been removed.
+The input changes require a full rebuild for incremental task ':monerokit:compileDebugLibraryResources'.
+work action resolve out (project :monerokit) (Thread[Execution worker Thread 6,5,main]) started.
+Resolve mutations for :monerokit:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 6,5,main]) started.
+:monerokit:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :monerokit:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':monerokit:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :monerokit:javaPreCompileDebug (Thread[Execution worker Thread 6,5,main]) started.
+:monerokit:javaPreCompileDebug (Thread[Execution worker Thread 6,5,main]) started.
+Resolve mutations for :app:javaPreCompileDebug (Thread[Execution worker Thread 7,5,main]) started.
+:app:javaPreCompileDebug (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :app:parseDebugLocalResources
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Task ':app:parseDebugLocalResources' is not up-to-date because:
+  Output property 'librarySymbolsFile' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt has been removed.
+The input changes require a full rebuild for incremental task ':app:parseDebugLocalResources'.
+
+> Task :monerokit:parseDebugLocalResources
+Caching disabled for task ':monerokit:parseDebugLocalResources' because:
+  Build cache is disabled
+Task ':monerokit:parseDebugLocalResources' is not up-to-date because:
+  Output property 'librarySymbolsFile' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt has been removed.
+The input changes require a full rebuild for incremental task ':monerokit:parseDebugLocalResources'.
+Resolve mutations for :monerokit:generateDebugRFile (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :monerokit:javaPreCompileDebug
+Caching disabled for task ':monerokit:javaPreCompileDebug' because:
+  Build cache is disabled
+Task ':monerokit:javaPreCompileDebug' is not up-to-date because:
+  Output property 'annotationProcessorListFile' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json has been removed.
+:monerokit:generateDebugRFile (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:javaPreCompileDebug
+Caching disabled for task ':app:javaPreCompileDebug' because:
+  Build cache is disabled
+Task ':app:javaPreCompileDebug' is not up-to-date because:
+  Output property 'annotationProcessorListFile' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json has been removed.
+
+> Task :monerokit:processDebugManifest
+Caching disabled for task ':monerokit:processDebugManifest' because:
+  Build cache is disabled
+Task ':monerokit:processDebugManifest' is not up-to-date because:
+  Output property 'aaptFriendlyManifestOutputDirectory' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt has been removed.
+  Output property 'aaptFriendlyManifestOutputDirectory' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml has been removed.
+  Output property 'aaptFriendlyManifestOutputDirectory' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json has been removed.
+  and more...
+Merging main manifest /Users/chyngyz/projects/monero-kit-android/monerokit/src/main/AndroidManifest.xml
+
+Merging result: SUCCESS
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.horizontalsystems.monerokit" >
+4
+5    <uses-sdk android:minSdkVersion="27" />
+6
+7</manifest>
+
+Merged manifest saved to /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml
+work action resolve AndroidManifest.xml (project :monerokit) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :app:processDebugMainManifest (Thread[Execution worker Thread 4,5,main]) started.
+:app:processDebugMainManifest (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :monerokit:generateDebugRFile
+Caching disabled for task ':monerokit:generateDebugRFile' because:
+  Build cache is disabled
+Task ':monerokit:generateDebugRFile' is not up-to-date because:
+  Output property 'RClassOutputJar' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar has been removed.
+  Output property 'symbolsWithPackageNameOutputFile' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt has been removed.
+  Output property 'textSymbolOutputFileProperty' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt has been removed.
+The input changes require a full rebuild for incremental task ':monerokit:generateDebugRFile'.
+
+> Task :app:processDebugMainManifest
+Caching disabled for task ':app:processDebugMainManifest' because:
+  Build cache is disabled
+Task ':app:processDebugMainManifest' is not up-to-date because:
+  Output property 'mergeBlameFile' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/manifest_merge_blame_file/debug/processDebugMainManifest/manifest-merger-blame-debug-report.txt has been removed.
+  Output property 'mergedManifest' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml has been removed.
+  Output property 'reportFile' file /Users/chyngyz/projects/monero-kit-android/app/build/outputs/logs/manifest-merger-debug-report.txt has been removed.
+Loading library manifest /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/a4d76380fb774ab36557a36dbed2426c/transformed/material-1.12.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/6126fe471f47066df2fa6f0e19af4e15/transformed/appcompat-resources-1.7.1/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/c47f2cd036fe2abd6706884fad03cd00/transformed/constraintlayout-2.0.1/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/65c5b8e11db972a9f7ec39e7229c9b43/transformed/appcompat-1.7.1/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/5a1bc954e3ef9521654b4e5a04c4eb73/transformed/material3-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/827078a6b98005afd971513ee3c41f43/transformed/material-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/7fb5c36de775a3afc000edf5597e5734/transformed/material-ripple-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/efa847a3b7898f8dbf7231faefb81fca/transformed/foundation-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/a7c0686992e1a1b5ce99b953d88912e3/transformed/animation-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/3414ea377ca564c6710b08209ea0f5fc/transformed/foundation-layout-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/c67df9c2e674647e8dc56c3fbb2656b7/transformed/animation-core-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/387da34dcab9eb2c415088c0900ce013/transformed/ui-tooling-data-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/42b6549a1a297dc7322ffebd4a77cce8/transformed/ui-unit-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/bc4963ac04c8641d8b8104a13403753d/transformed/ui-geometry-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/28c04df8a440191ac08e19f251ef7fc1/transformed/ui-util-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/4ed896417eec9727d491557330e3d399/transformed/ui-text-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/f0a49c207c82eeb0bc1fbaf02a2053e6/transformed/ui-tooling-preview-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/d15370947afa7206cd97b9be8290a643/transformed/ui-tooling-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/115022293478fd379af97728524024ab/transformed/ui-graphics-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/d81051b8238d7187c8dddf6ab7a79d3f/transformed/material-icons-core-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/b4865e59472962f29830b6de0b1109f5/transformed/ui-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/7e1f1692e3b5bfdf7f2da966c46ca6fb/transformed/ui-test-manifest-1.7.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/0ba89d3ccfe27fad15abaeab99654d73/transformed/viewpager2-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/f061414bebb12f1f6e387d11235c23ae/transformed/fragment-1.5.4/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/e2394928580428418550489912580de7/transformed/activity-1.10.1/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/d85ac21d534158784d4f743aa145f5a2/transformed/activity-ktx-1.10.1/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/6ad01196e1de1127a9352d588a6e746d/transformed/activity-compose-1.10.1/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/3a3f7ffeb3a9c8ce56f8096cee3fe80b/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/e2aef3fb3f0d1d950486ec1dc1f4ab2a/transformed/emoji2-1.3.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/ae0b87f92752473b1241643a54caa7f3/transformed/drawerlayout-1.1.1/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/4cc7a9693e952002d4bda47d3eedb177/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/0d52b75aa817ff9dcc9c08463f5e583b/transformed/transition-1.5.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/43593ab721c8af197714726fcb370557/transformed/dynamicanimation-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/50dc60bc3dce312fa43ef166cbd25ecf/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/253d7b7ebc2a763414dba2c012252738/transformed/vectordrawable-1.1.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/6dbb501b7afb45999422b412b5337d58/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/2924be6adeb989736b002a373df07de1/transformed/loader-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/600ff98c9df4b59555b1e8371885d340/transformed/viewpager-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/047f699ae078e843a0de46830da20902/transformed/recyclerview-1.1.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/079ddaa661fb86d51597b0c14b5cd5ab/transformed/customview-1.1.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/82d33199cf41952c3617f704ebfea851/transformed/autofill-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/f4c6cd20936406b77440a53760d86ac0/transformed/graphics-path-1.0.1/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/91dd22902e28977453e034db5fad862a/transformed/core-1.16.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/000d7775ddc956853bc94c9f1538ba86/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/933aeec00478bc6f72b4c7ed77cdc0b8/transformed/lifecycle-livedata-core-ktx-2.9.2/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/7c2cebd0f8e94cacc975c26f3762622e/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/3d4ae55ad6bb619cb45d256e41c6d6f5/transformed/lifecycle-livedata-2.9.2/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/582be899763f733eb8f0a7d1568099af/transformed/lifecycle-viewmodel-2.9.2/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/a9a2fa75066adcb6dc015840f09fe48f/transformed/lifecycle-viewmodel-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/8e531820ed67507ad5de3c555c1f739f/transformed/savedstate-ktx-1.3.1/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/14620853878380545fadc37105124af8/transformed/savedstate-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/2ca3564c725d33c81cbe275e7c04badc/transformed/lifecycle-runtime-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/37a33ccd3e1cc5e1e86af90b5000bbc3/transformed/lifecycle-livedata-core-2.9.2/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/b8c5c5e9b304f6b4e54b96d2cc4b97b8/transformed/lifecycle-process-2.9.2/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/47de3c4042d2051528ee7a3b28476d94/transformed/lifecycle-viewmodel-ktx-2.9.2/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/205db45625433d84f0e32c33026411cc/transformed/lifecycle-runtime-ktx/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/a268be333db91826db7941953fa6fb9d/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/448ad3d5a9926fc43f77648f30ae556e/transformed/core-ktx-1.16.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/3011f4f5dad0c829946999c4ca1e5a78/transformed/timber-5.0.1/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/f864c1b418472e0f75c3b31f7a29102b/transformed/runtime-saveable-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/c0d4826f6f4bcafb16581a268113b645/transformed/runtime-release/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/6597da42a1cf5173be4bfbd0df5883cc/transformed/annotation-experimental-1.4.1/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/2887763ebe8893221645b0612d05d711/transformed/core-viewtree-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/e2f30d538a9353385a9dd448df736816/transformed/versionedparcelable-1.1.1/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/19ab8b1031e2f242bb4997d0a1b0c079/transformed/cursoradapter-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/50ba09eee7fdc8431a0ebcc6457b8449/transformed/cardview-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/2edd86982e60a4c7c1299eed17e25153/transformed/interpolator-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/291999543d1bdd3ff8b8be55e44a33ef/transformed/startup-runtime-1.1.1/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/d5f7fbe782eed7ef6942b4edc206cded/transformed/tracing-1.2.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/0c78b9f1dc898395d726c56b3b464dbd/transformed/core-runtime-2.2.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/6e0e710b3d4c52750c2041a16679b7f1/transformed/documentfile-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/21fb21e608b35a3f2c48b0288845fabf/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/6a9900f86b18eff509b3fe67559b2626/transformed/print-1.0.0/AndroidManifest.xml
+Merging main manifest /Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml
+
+Merging library manifest /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml
+Merging manifest with lower [:monerokit] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [:monerokit] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/a4d76380fb774ab36557a36dbed2426c/transformed/material-1.12.0/AndroidManifest.xml
+Merging manifest with lower [com.google.android.material:material:1.12.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [com.google.android.material:material:1.12.0] AndroidManifest.xml:20:5-44
+application defined in both files...
+Merging application with lower [com.google.android.material:material:1.12.0] AndroidManifest.xml:22:5-20
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/6126fe471f47066df2fa6f0e19af4e15/transformed/appcompat-resources-1.7.1/AndroidManifest.xml
+Merging manifest with lower [androidx.appcompat:appcompat-resources:1.7.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.appcompat:appcompat-resources:1.7.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/c47f2cd036fe2abd6706884fad03cd00/transformed/constraintlayout-2.0.1/AndroidManifest.xml
+Merging manifest with lower [androidx.constraintlayout:constraintlayout:2.0.1] AndroidManifest.xml:2:1-11:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.constraintlayout:constraintlayout:2.0.1] AndroidManifest.xml:5:5-7:41
+application defined in both files...
+Merging application with lower [androidx.constraintlayout:constraintlayout:2.0.1] AndroidManifest.xml:9:5-20
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/65c5b8e11db972a9f7ec39e7229c9b43/transformed/appcompat-1.7.1/AndroidManifest.xml
+Merging manifest with lower [androidx.appcompat:appcompat:1.7.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.appcompat:appcompat:1.7.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/5a1bc954e3ef9521654b4e5a04c4eb73/transformed/material3-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.material3:material3-android:1.3.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.material3:material3-android:1.3.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/827078a6b98005afd971513ee3c41f43/transformed/material-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.material:material-android:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.material:material-android:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/7fb5c36de775a3afc000edf5597e5734/transformed/material-ripple-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.material:material-ripple-android:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.material:material-ripple-android:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/efa847a3b7898f8dbf7231faefb81fca/transformed/foundation-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.foundation:foundation-android:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.foundation:foundation-android:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/a7c0686992e1a1b5ce99b953d88912e3/transformed/animation-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.animation:animation-android:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.animation:animation-android:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/3414ea377ca564c6710b08209ea0f5fc/transformed/foundation-layout-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.foundation:foundation-layout-android:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.foundation:foundation-layout-android:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/c67df9c2e674647e8dc56c3fbb2656b7/transformed/animation-core-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.animation:animation-core-android:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.animation:animation-core-android:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/387da34dcab9eb2c415088c0900ce013/transformed/ui-tooling-data-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-tooling-data-android:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-tooling-data-android:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/42b6549a1a297dc7322ffebd4a77cce8/transformed/ui-unit-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-unit-android:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-unit-android:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/bc4963ac04c8641d8b8104a13403753d/transformed/ui-geometry-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-geometry-android:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-geometry-android:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/28c04df8a440191ac08e19f251ef7fc1/transformed/ui-util-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-util-android:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-util-android:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/4ed896417eec9727d491557330e3d399/transformed/ui-text-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-text-android:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-text-android:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/f0a49c207c82eeb0bc1fbaf02a2053e6/transformed/ui-tooling-preview-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-tooling-preview-android:1.7.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-tooling-preview-android:1.7.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/d15370947afa7206cd97b9be8290a643/transformed/ui-tooling-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-tooling-android:1.7.0] AndroidManifest.xml:17:1-28:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-tooling-android:1.7.0] AndroidManifest.xml:20:5-44
+application defined in both files...
+Merging application with lower [androidx.compose.ui:ui-tooling-android:1.7.0] AndroidManifest.xml:22:5-26:19
+Adopted [activity: null]
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/115022293478fd379af97728524024ab/transformed/ui-graphics-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-graphics-android:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-graphics-android:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/d81051b8238d7187c8dddf6ab7a79d3f/transformed/material-icons-core-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.material:material-icons-core-android:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.material:material-icons-core-android:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/b4865e59472962f29830b6de0b1109f5/transformed/ui-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-android:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-android:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/7e1f1692e3b5bfdf7f2da966c46ca6fb/transformed/ui-test-manifest-1.7.0/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-test-manifest:1.7.0] AndroidManifest.xml:17:1-28:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-test-manifest:1.7.0] AndroidManifest.xml:20:5-44
+application defined in both files...
+Merging application with lower [androidx.compose.ui:ui-test-manifest:1.7.0] AndroidManifest.xml:22:5-26:19
+Adopted [activity: null]
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/0ba89d3ccfe27fad15abaeab99654d73/transformed/viewpager2-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.viewpager2:viewpager2:1.0.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.viewpager2:viewpager2:1.0.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/f061414bebb12f1f6e387d11235c23ae/transformed/fragment-1.5.4/AndroidManifest.xml
+Merging manifest with lower [androidx.fragment:fragment:1.5.4] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.fragment:fragment:1.5.4] AndroidManifest.xml:20:5-22:41
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/e2394928580428418550489912580de7/transformed/activity-1.10.1/AndroidManifest.xml
+Merging manifest with lower [androidx.activity:activity:1.10.1] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.activity:activity:1.10.1] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/d85ac21d534158784d4f743aa145f5a2/transformed/activity-ktx-1.10.1/AndroidManifest.xml
+Merging manifest with lower [androidx.activity:activity-ktx:1.10.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.activity:activity-ktx:1.10.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/6ad01196e1de1127a9352d588a6e746d/transformed/activity-compose-1.10.1/AndroidManifest.xml
+Merging manifest with lower [androidx.activity:activity-compose:1.10.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.activity:activity-compose:1.10.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/3a3f7ffeb3a9c8ce56f8096cee3fe80b/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml
+Merging manifest with lower [androidx.emoji2:emoji2-views-helper:1.3.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.emoji2:emoji2-views-helper:1.3.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/e2aef3fb3f0d1d950486ec1dc1f4ab2a/transformed/emoji2-1.3.0/AndroidManifest.xml
+Merging manifest with lower [androidx.emoji2:emoji2:1.3.0] AndroidManifest.xml:17:1-35:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.emoji2:emoji2:1.3.0] AndroidManifest.xml:21:5-44
+application defined in both files...
+Merging application with lower [androidx.emoji2:emoji2:1.3.0] AndroidManifest.xml:23:5-33:19
+Adopted [provider: null]
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/ae0b87f92752473b1241643a54caa7f3/transformed/drawerlayout-1.1.1/AndroidManifest.xml
+Merging manifest with lower [androidx.drawerlayout:drawerlayout:1.1.1] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.drawerlayout:drawerlayout:1.1.1] AndroidManifest.xml:20:5-22:41
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/4cc7a9693e952002d4bda47d3eedb177/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml
+Merging manifest with lower [androidx.coordinatorlayout:coordinatorlayout:1.1.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.coordinatorlayout:coordinatorlayout:1.1.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/0d52b75aa817ff9dcc9c08463f5e583b/transformed/transition-1.5.0/AndroidManifest.xml
+Merging manifest with lower [androidx.transition:transition:1.5.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.transition:transition:1.5.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/43593ab721c8af197714726fcb370557/transformed/dynamicanimation-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.dynamicanimation:dynamicanimation:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.dynamicanimation:dynamicanimation:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/50dc60bc3dce312fa43ef166cbd25ecf/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml
+Merging manifest with lower [androidx.vectordrawable:vectordrawable-animated:1.1.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.vectordrawable:vectordrawable-animated:1.1.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/253d7b7ebc2a763414dba2c012252738/transformed/vectordrawable-1.1.0/AndroidManifest.xml
+Merging manifest with lower [androidx.vectordrawable:vectordrawable:1.1.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.vectordrawable:vectordrawable:1.1.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/6dbb501b7afb45999422b412b5337d58/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.legacy:legacy-support-core-utils:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.legacy:legacy-support-core-utils:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/2924be6adeb989736b002a373df07de1/transformed/loader-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.loader:loader:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.loader:loader:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/600ff98c9df4b59555b1e8371885d340/transformed/viewpager-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.viewpager:viewpager:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.viewpager:viewpager:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/047f699ae078e843a0de46830da20902/transformed/recyclerview-1.1.0/AndroidManifest.xml
+Merging manifest with lower [androidx.recyclerview:recyclerview:1.1.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.recyclerview:recyclerview:1.1.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/079ddaa661fb86d51597b0c14b5cd5ab/transformed/customview-1.1.0/AndroidManifest.xml
+Merging manifest with lower [androidx.customview:customview:1.1.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.customview:customview:1.1.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/82d33199cf41952c3617f704ebfea851/transformed/autofill-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.autofill:autofill:1.0.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.autofill:autofill:1.0.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/f4c6cd20936406b77440a53760d86ac0/transformed/graphics-path-1.0.1/AndroidManifest.xml
+Merging manifest with lower [androidx.graphics:graphics-path:1.0.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.graphics:graphics-path:1.0.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/91dd22902e28977453e034db5fad862a/transformed/core-1.16.0/AndroidManifest.xml
+Merging manifest with lower [androidx.core:core:1.16.0] AndroidManifest.xml:17:1-30:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.core:core:1.16.0] AndroidManifest.xml:20:5-44
+Adopted [permission: null]
+Adopted [uses-permission: null]
+application defined in both files...
+Merging application with lower [androidx.core:core:1.16.0] AndroidManifest.xml:28:5-89
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/000d7775ddc956853bc94c9f1538ba86/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.customview:customview-poolingcontainer:1.0.0] AndroidManifest.xml:17:1-23:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.customview:customview-poolingcontainer:1.0.0] AndroidManifest.xml:20:5-21:38
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/933aeec00478bc6f72b4c7ed77cdc0b8/transformed/lifecycle-livedata-core-ktx-2.9.2/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.2] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.2] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/7c2cebd0f8e94cacc975c26f3762622e/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.2] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.2] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/3d4ae55ad6bb619cb45d256e41c6d6f5/transformed/lifecycle-livedata-2.9.2/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-livedata:2.9.2] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-livedata:2.9.2] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/582be899763f733eb8f0a7d1568099af/transformed/lifecycle-viewmodel-2.9.2/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-viewmodel:2.9.2] AndroidManifest.xml:2:1-5:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-viewmodel:2.9.2] AndroidManifest.xml:4:5-43
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/a9a2fa75066adcb6dc015840f09fe48f/transformed/lifecycle-viewmodel-release/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-viewmodel-android:2.9.2] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-viewmodel-android:2.9.2] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/8e531820ed67507ad5de3c555c1f739f/transformed/savedstate-ktx-1.3.1/AndroidManifest.xml
+Merging manifest with lower [androidx.savedstate:savedstate-ktx:1.3.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.savedstate:savedstate-ktx:1.3.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/14620853878380545fadc37105124af8/transformed/savedstate-release/AndroidManifest.xml
+Merging manifest with lower [androidx.savedstate:savedstate-android:1.3.1] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.savedstate:savedstate-android:1.3.1] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/2ca3564c725d33c81cbe275e7c04badc/transformed/lifecycle-runtime-release/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-runtime-android:2.9.2] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-runtime-android:2.9.2] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/37a33ccd3e1cc5e1e86af90b5000bbc3/transformed/lifecycle-livedata-core-2.9.2/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-livedata-core:2.9.2] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-livedata-core:2.9.2] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/b8c5c5e9b304f6b4e54b96d2cc4b97b8/transformed/lifecycle-process-2.9.2/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-process:2.9.2] AndroidManifest.xml:17:1-35:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-process:2.9.2] AndroidManifest.xml:21:5-44
+application defined in both files...
+Merging application with lower [androidx.lifecycle:lifecycle-process:2.9.2] AndroidManifest.xml:23:5-33:19
+provider#androidx.startup.InitializationProvider defined in both files...
+Merging provider#androidx.startup.InitializationProvider with lower [androidx.lifecycle:lifecycle-process:2.9.2] AndroidManifest.xml:24:9-32:20
+Adopted [meta-data: null]
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/47de3c4042d2051528ee7a3b28476d94/transformed/lifecycle-viewmodel-ktx-2.9.2/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.2] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.2] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/205db45625433d84f0e32c33026411cc/transformed/lifecycle-runtime-ktx/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.2] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.2] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/a268be333db91826db7941953fa6fb9d/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.2] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.2] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/448ad3d5a9926fc43f77648f30ae556e/transformed/core-ktx-1.16.0/AndroidManifest.xml
+Merging manifest with lower [androidx.core:core-ktx:1.16.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.core:core-ktx:1.16.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/3011f4f5dad0c829946999c4ca1e5a78/transformed/timber-5.0.1/AndroidManifest.xml
+Merging manifest with lower [com.jakewharton.timber:timber:5.0.1] AndroidManifest.xml:2:1-9:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [com.jakewharton.timber:timber:5.0.1] AndroidManifest.xml:5:5-44
+application defined in both files...
+Merging application with lower [com.jakewharton.timber:timber:5.0.1] AndroidManifest.xml:7:5-20
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/f864c1b418472e0f75c3b31f7a29102b/transformed/runtime-saveable-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.runtime:runtime-saveable-android:1.7.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.runtime:runtime-saveable-android:1.7.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/c0d4826f6f4bcafb16581a268113b645/transformed/runtime-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.runtime:runtime-android:1.7.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.runtime:runtime-android:1.7.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/6597da42a1cf5173be4bfbd0df5883cc/transformed/annotation-experimental-1.4.1/AndroidManifest.xml
+Merging manifest with lower [androidx.annotation:annotation-experimental:1.4.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.annotation:annotation-experimental:1.4.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/2887763ebe8893221645b0612d05d711/transformed/core-viewtree-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.core:core-viewtree:1.0.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.core:core-viewtree:1.0.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/e2f30d538a9353385a9dd448df736816/transformed/versionedparcelable-1.1.1/AndroidManifest.xml
+Merging manifest with lower [androidx.versionedparcelable:versionedparcelable:1.1.1] AndroidManifest.xml:17:1-27:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.versionedparcelable:versionedparcelable:1.1.1] AndroidManifest.xml:20:5-22:41
+application defined in both files...
+Merging application with lower [androidx.versionedparcelable:versionedparcelable:1.1.1] AndroidManifest.xml:24:5-25:19
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/19ab8b1031e2f242bb4997d0a1b0c079/transformed/cursoradapter-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.cursoradapter:cursoradapter:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.cursoradapter:cursoradapter:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/50ba09eee7fdc8431a0ebcc6457b8449/transformed/cardview-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.cardview:cardview:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.cardview:cardview:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/2edd86982e60a4c7c1299eed17e25153/transformed/interpolator-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.interpolator:interpolator:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.interpolator:interpolator:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml
+Merging manifest with lower [androidx.profileinstaller:profileinstaller:1.4.0] AndroidManifest.xml:17:1-55:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.profileinstaller:profileinstaller:1.4.0] AndroidManifest.xml:21:5-44
+application defined in both files...
+Merging application with lower [androidx.profileinstaller:profileinstaller:1.4.0] AndroidManifest.xml:23:5-53:19
+provider#androidx.startup.InitializationProvider defined in both files...
+Merging provider#androidx.startup.InitializationProvider with lower [androidx.profileinstaller:profileinstaller:1.4.0] AndroidManifest.xml:24:9-32:20
+Adopted [meta-data: null]
+Adopted [receiver: null]
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/291999543d1bdd3ff8b8be55e44a33ef/transformed/startup-runtime-1.1.1/AndroidManifest.xml
+Merging manifest with lower [androidx.startup:startup-runtime:1.1.1] AndroidManifest.xml:17:1-33:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.startup:startup-runtime:1.1.1] AndroidManifest.xml:21:5-23:41
+application defined in both files...
+Merging application with lower [androidx.startup:startup-runtime:1.1.1] AndroidManifest.xml:25:5-31:19
+provider#androidx.startup.InitializationProvider defined in both files...
+Merging provider#androidx.startup.InitializationProvider with lower [androidx.startup:startup-runtime:1.1.1] AndroidManifest.xml:26:9-30:34
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/d5f7fbe782eed7ef6942b4edc206cded/transformed/tracing-1.2.0/AndroidManifest.xml
+Merging manifest with lower [androidx.tracing:tracing:1.2.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.tracing:tracing:1.2.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/0c78b9f1dc898395d726c56b3b464dbd/transformed/core-runtime-2.2.0/AndroidManifest.xml
+Merging manifest with lower [androidx.arch.core:core-runtime:2.2.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.arch.core:core-runtime:2.2.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/6e0e710b3d4c52750c2041a16679b7f1/transformed/documentfile-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.documentfile:documentfile:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.documentfile:documentfile:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/21fb21e608b35a3f2c48b0288845fabf/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/chyngyz/.gradle/caches/8.13/transforms/6a9900f86b18eff509b3fe67559b2626/transformed/print-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.print:print:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.print:print:1.0.0] AndroidManifest.xml:20:5-44
+Merging result: SUCCESS
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.horizontalsystems.monerokit.sample"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="27"
+9        android:targetSdkVersion="36" />
+10
+11    <permission
+11-->[androidx.core:core:1.16.0] /Users/chyngyz/.gradle/caches/8.13/transforms/91dd22902e28977453e034db5fad862a/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
+12        android:name="io.horizontalsystems.monerokit.sample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.16.0] /Users/chyngyz/.gradle/caches/8.13/transforms/91dd22902e28977453e034db5fad862a/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.16.0] /Users/chyngyz/.gradle/caches/8.13/transforms/91dd22902e28977453e034db5fad862a/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="io.horizontalsystems.monerokit.sample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.16.0] /Users/chyngyz/.gradle/caches/8.13/transforms/91dd22902e28977453e034db5fad862a/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.16.0] /Users/chyngyz/.gradle/caches/8.13/transforms/91dd22902e28977453e034db5fad862a/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:5:5-25:19
+18        android:allowBackup="true"
+18-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.16.0] /Users/chyngyz/.gradle/caches/8.13/transforms/91dd22902e28977453e034db5fad862a/transformed/core-1.16.0/AndroidManifest.xml:28:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:7:9-65
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:fullBackupContent="@xml/backup_rules"
+23-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:8:9-54
+24        android:icon="@mipmap/ic_launcher"
+24-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:9:9-43
+25        android:label="@string/app_name"
+25-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:10:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:11:9-54
+27        android:supportsRtl="true"
+27-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:12:9-35
+28        android:theme="@style/Theme.Monerokitandroid" >
+28-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:13:9-54
+29        <activity
+29-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:14:9-24:20
+30            android:name="io.horizontalsystems.monerokit.sample.MainActivity"
+30-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:15:13-41
+31            android:exported="true"
+31-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:16:13-36
+32            android:label="@string/app_name"
+32-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:17:13-45
+33            android:theme="@style/Theme.Monerokitandroid" >
+33-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:18:13-58
+34            <intent-filter>
+34-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:19:13-23:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:20:17-69
+35-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:20:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:22:17-77
+37-->/Users/chyngyz/projects/monero-kit-android/app/src/main/AndroidManifest.xml:22:27-74
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->[androidx.compose.ui:ui-tooling-android:1.7.0] /Users/chyngyz/.gradle/caches/8.13/transforms/d15370947afa7206cd97b9be8290a643/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+41            android:name="androidx.compose.ui.tooling.PreviewActivity"
+41-->[androidx.compose.ui:ui-tooling-android:1.7.0] /Users/chyngyz/.gradle/caches/8.13/transforms/d15370947afa7206cd97b9be8290a643/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+42            android:exported="true" />
+42-->[androidx.compose.ui:ui-tooling-android:1.7.0] /Users/chyngyz/.gradle/caches/8.13/transforms/d15370947afa7206cd97b9be8290a643/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+43        <activity
+43-->[androidx.compose.ui:ui-test-manifest:1.7.0] /Users/chyngyz/.gradle/caches/8.13/transforms/7e1f1692e3b5bfdf7f2da966c46ca6fb/transformed/ui-test-manifest-1.7.0/AndroidManifest.xml:23:9-25:39
+44            android:name="androidx.activity.ComponentActivity"
+44-->[androidx.compose.ui:ui-test-manifest:1.7.0] /Users/chyngyz/.gradle/caches/8.13/transforms/7e1f1692e3b5bfdf7f2da966c46ca6fb/transformed/ui-test-manifest-1.7.0/AndroidManifest.xml:24:13-63
+45            android:exported="true" />
+45-->[androidx.compose.ui:ui-test-manifest:1.7.0] /Users/chyngyz/.gradle/caches/8.13/transforms/7e1f1692e3b5bfdf7f2da966c46ca6fb/transformed/ui-test-manifest-1.7.0/AndroidManifest.xml:25:13-36
+46
+47        <provider
+47-->[androidx.emoji2:emoji2:1.3.0] /Users/chyngyz/.gradle/caches/8.13/transforms/e2aef3fb3f0d1d950486ec1dc1f4ab2a/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+48            android:name="androidx.startup.InitializationProvider"
+48-->[androidx.emoji2:emoji2:1.3.0] /Users/chyngyz/.gradle/caches/8.13/transforms/e2aef3fb3f0d1d950486ec1dc1f4ab2a/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+49            android:authorities="io.horizontalsystems.monerokit.sample.androidx-startup"
+49-->[androidx.emoji2:emoji2:1.3.0] /Users/chyngyz/.gradle/caches/8.13/transforms/e2aef3fb3f0d1d950486ec1dc1f4ab2a/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+50            android:exported="false" >
+50-->[androidx.emoji2:emoji2:1.3.0] /Users/chyngyz/.gradle/caches/8.13/transforms/e2aef3fb3f0d1d950486ec1dc1f4ab2a/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+51            <meta-data
+51-->[androidx.emoji2:emoji2:1.3.0] /Users/chyngyz/.gradle/caches/8.13/transforms/e2aef3fb3f0d1d950486ec1dc1f4ab2a/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+52-->[androidx.emoji2:emoji2:1.3.0] /Users/chyngyz/.gradle/caches/8.13/transforms/e2aef3fb3f0d1d950486ec1dc1f4ab2a/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+53                android:value="androidx.startup" />
+53-->[androidx.emoji2:emoji2:1.3.0] /Users/chyngyz/.gradle/caches/8.13/transforms/e2aef3fb3f0d1d950486ec1dc1f4ab2a/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+54            <meta-data
+54-->[androidx.lifecycle:lifecycle-process:2.9.2] /Users/chyngyz/.gradle/caches/8.13/transforms/b8c5c5e9b304f6b4e54b96d2cc4b97b8/transformed/lifecycle-process-2.9.2/AndroidManifest.xml:29:13-31:52
+55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+55-->[androidx.lifecycle:lifecycle-process:2.9.2] /Users/chyngyz/.gradle/caches/8.13/transforms/b8c5c5e9b304f6b4e54b96d2cc4b97b8/transformed/lifecycle-process-2.9.2/AndroidManifest.xml:30:17-78
+56                android:value="androidx.startup" />
+56-->[androidx.lifecycle:lifecycle-process:2.9.2] /Users/chyngyz/.gradle/caches/8.13/transforms/b8c5c5e9b304f6b4e54b96d2cc4b97b8/transformed/lifecycle-process-2.9.2/AndroidManifest.xml:31:17-49
+57            <meta-data
+57-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+58                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+58-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+59                android:value="androidx.startup" />
+59-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+60        </provider>
+61
+62        <receiver
+62-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+63            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+63-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+64            android:directBootAware="false"
+64-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+65            android:enabled="true"
+65-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+66            android:exported="true"
+66-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+67            android:permission="android.permission.DUMP" >
+67-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+68            <intent-filter>
+68-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+69                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+69-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+69-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+70            </intent-filter>
+71            <intent-filter>
+71-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+72                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+72-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+72-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+73            </intent-filter>
+74            <intent-filter>
+74-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+75                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+75-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+75-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+76            </intent-filter>
+77            <intent-filter>
+77-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+78                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+78-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+78-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/chyngyz/.gradle/caches/8.13/transforms/fc74ba10ab47e31fcbe50d0f40453a5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+79            </intent-filter>
+80        </receiver>
+81    </application>
+82
+83</manifest>
+
+Merged manifest saved to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml
+work action resolve package-aware-r.txt (project :monerokit) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :app:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+:app:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:processDebugManifest
+Caching disabled for task ':app:processDebugManifest' because:
+  Build cache is disabled
+Task ':app:processDebugManifest' is not up-to-date because:
+  Output property 'multiApkManifestOutputDirectory' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_manifests/debug/processDebugManifest has been removed.
+  Output property 'multiApkManifestOutputDirectory' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_manifests/debug/processDebugManifest/AndroidManifest.xml has been removed.
+  Output property 'multiApkManifestOutputDirectory' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_manifests/debug/processDebugManifest/output-metadata.json has been removed.
+Resolve mutations for :app:processDebugManifestForPackage (Thread[Execution worker Thread 4,5,main]) started.
+:app:processDebugManifestForPackage (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :monerokit:compileDebugKotlin (Thread[Execution worker Thread 6,5,main]) started.
+:monerokit:compileDebugKotlin (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :monerokit:compileDebugKotlin NO-SOURCE
+Skipping task ':monerokit:compileDebugKotlin' as it has no source files and no previous output files.
+Resolve mutations for :monerokit:compileDebugJavaWithJavac (Thread[Execution worker Thread 6,5,main]) started.
+:monerokit:compileDebugJavaWithJavac (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :app:mergeDebugResources
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sv/values-sv.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sv_values-sv.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-h480dp-land-v13_values-h480dp-land-v13.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rCA_values-en-rCA.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hu/values-hu.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hu_values-hu.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sl/values-sl.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sl_values-sl.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-te/values-te.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-te_values-te.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-in/values-in.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-in_values-in.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hy/values-hy.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hy_values-hy.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ko/values-ko.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ko_values-ko.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-af/values-af.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-af_values-af.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lo/values-lo.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-lo_values-lo.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-th/values-th.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-th_values-th.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v25/values-v25.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v25_values-v25.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ro/values-ro.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ro_values-ro.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ar/values-ar.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ar_values-ar.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lt/values-lt.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-lt_values-lt.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mk/values-mk.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-mk_values-mk.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bs/values-bs.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-bs_values-bs.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-az/values-az.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-az_values-az.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ml/values-ml.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ml_values-ml.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sq/values-sq.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sq_values-sq.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zh-rTW_values-zh-rTW.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v28/values-v28.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v28_values-v28.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v30/values-v30.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v30_values-v30.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ca/values-ca.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ca_values-ca.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-my/values-my.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-my_values-my.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sw/values-sw.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sw_values-sw.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-port/values-port.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-port_values-port.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rXC_values-en-rXC.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ta/values-ta.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ta_values-ta.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w600dp-land-v13/values-w600dp-land-v13.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-w600dp-land-v13_values-w600dp-land-v13.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fr/values-fr.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fr_values-fr.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-tl/values-tl.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-tl_values-tl.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-gl/values-gl.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-gl_values-gl.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-xlarge-v4_values-xlarge-v4.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rIN_values-en-rIN.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lv/values-lv.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-lv_values-lv.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-b+es+419/values-b+es+419.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-b+es+419_values-b+es+419.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-uz/values-uz.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-uz_values-uz.arsc.flat
+Compiling file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-xxhdpi_ic_launcher.webp.flat
+Compiling file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-mdpi_ic_launcher_round.webp.flat
+Compiling file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/mipmap-hdpi/ic_launcher.webp to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-hdpi_ic_launcher.webp.flat
+Compiling xml file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/xml/backup_rules.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/xml_backup_rules.xml.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mn/values-mn.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-mn_values-mn.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-et/values-et.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-et_values-et.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-es/values-es.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-es_values-es.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ne/values-ne.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ne_values-ne.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-night-v8_values-night-v8.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hdpi-v4_values-hdpi-v4.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pa/values-pa.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pa_values-pa.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-large-v4_values-large-v4.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-gu/values-gu.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-gu_values-gu.arsc.flat
+Compiling xml file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/xml/data_extraction_rules.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/xml_data_extraction_rules.xml.flat
+Compiling file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-xxhdpi_ic_launcher_round.webp.flat
+Compiling file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-xxxhdpi_ic_launcher.webp.flat
+Compiling xml file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-anydpi_ic_launcher_round.xml.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h320dp-port-v13/values-h320dp-port-v13.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-h320dp-port-v13_values-h320dp-port-v13.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w320dp-land-v13/values-w320dp-land-v13.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-w320dp-land-v13_values-w320dp-land-v13.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-as/values-as.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-as_values-as.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v24/values-v24.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v24_values-v24.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sw600dp-v13_values-sw600dp-v13.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v31/values-v31.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v31_values-v31.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sr/values-sr.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sr_values-sr.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ky/values-ky.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ky_values-ky.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-da/values-da.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-da_values-da.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h550dp-port-v13/values-h550dp-port-v13.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-h550dp-port-v13_values-h550dp-port-v13.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fr-rCA_values-fr-rCA.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-eu/values-eu.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-eu_values-eu.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fa/values-fa.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fa_values-fa.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rGB_values-en-rGB.arsc.flat
+Compiling XML table /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pl/values-pl.xml to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pl_values-pl.arsc.flat
+Compiling file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-xhdpi_ic_launcher_round.webp.flat
+Compiling file /Users/chyngyz/projects/monero-kit-android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp to /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-xxxhdpi_ic_launcher_round.webp.flat
+
+> Task :monerokit:compileDebugJavaWithJavac
+Custom actions are attached to task ':monerokit:compileDebugJavaWithJavac'.
+Caching disabled for task ':monerokit:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Task ':monerokit:compileDebugJavaWithJavac' is not up-to-date because:
+  Output property 'destinationDirectory' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes has been removed.
+  Output property 'destinationDirectory' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io has been removed.
+  Output property 'destinationDirectory' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/horizontalsystems has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':monerokit:compileDebugJavaWithJavac'.
+Compilation mode: in-process compilation
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain '/Library/Java/JavaVirtualMachines/temurin-18.jdk/Contents/Home'.
+file or directory '/Users/chyngyz/projects/monero-kit-android/monerokit/src/debug/java', not found
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.005 secs.
+Created classpath snapshot for incremental compilation in 0.015 secs.
+Resolve mutations for :monerokit:bundleLibCompileToJarDebug (Thread[Execution worker Thread 6,5,main]) started.
+:monerokit:bundleLibCompileToJarDebug (Thread[Execution worker Thread 6,5,main]) started.
+Resolve mutations for :app:mergeDebugShaders (Thread[Execution worker Thread 5,5,main]) started.
+:app:mergeDebugShaders (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:mergeDebugShaders
+Caching disabled for task ':app:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Task ':app:mergeDebugShaders' is not up-to-date because:
+  Output property 'outputDir' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_shaders/debug/mergeDebugShaders/out has been removed.
+The input changes require a full rebuild for incremental task ':app:mergeDebugShaders'.
+Resolve mutations for :app:compileDebugShaders (Thread[Execution worker Thread 5,5,main]) started.
+:app:compileDebugShaders (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:compileDebugShaders NO-SOURCE
+Skipping task ':app:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :app:generateDebugAssets (Thread[Execution worker Thread 5,5,main]) started.
+:app:generateDebugAssets (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:generateDebugAssets UP-TO-DATE
+Skipping task ':app:generateDebugAssets' as it has no actions.
+Resolve mutations for :monerokit:mergeDebugShaders (Thread[Execution worker Thread 5,5,main]) started.
+:monerokit:mergeDebugShaders (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :monerokit:bundleLibCompileToJarDebug
+Caching disabled for task ':monerokit:bundleLibCompileToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Task ':monerokit:bundleLibCompileToJarDebug' is not up-to-date because:
+  Output property 'output' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar has been removed.
+
+> Task :monerokit:mergeDebugShaders
+Caching disabled for task ':monerokit:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Task ':monerokit:mergeDebugShaders' is not up-to-date because:
+  Output property 'outputDir' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/merged_shaders/debug/mergeDebugShaders/out has been removed.
+The input changes require a full rebuild for incremental task ':monerokit:mergeDebugShaders'.
+work action resolve classes.jar (project :monerokit) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :monerokit:compileDebugShaders (Thread[Execution worker Thread 7,5,main]) started.
+:monerokit:compileDebugShaders (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :monerokit:compileDebugShaders NO-SOURCE
+Skipping task ':monerokit:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :monerokit:generateDebugAssets (Thread[Execution worker Thread 7,5,main]) started.
+:monerokit:generateDebugAssets (Thread[included builds,5,main]) started.
+
+> Task :monerokit:generateDebugAssets UP-TO-DATE
+Skipping task ':monerokit:generateDebugAssets' as it has no actions.
+Resolve mutations for :monerokit:mergeDebugAssets (Thread[included builds,5,main]) started.
+:monerokit:mergeDebugAssets (Thread[included builds,5,main]) started.
+
+> Task :monerokit:mergeDebugAssets
+Caching disabled for task ':monerokit:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Task ':monerokit:mergeDebugAssets' is not up-to-date because:
+  Output property 'outputDir' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/assets/debug/mergeDebugAssets has been removed.
+The input changes require a full rebuild for incremental task ':monerokit:mergeDebugAssets'.
+work action resolve mergeDebugAssets (project :monerokit) (Thread[included builds,5,main]) started.
+Resolve mutations for :app:mergeDebugAssets (Thread[included builds,5,main]) started.
+:app:mergeDebugAssets (Thread[included builds,5,main]) started.
+
+> Task :app:mergeDebugAssets
+Caching disabled for task ':app:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Task ':app:mergeDebugAssets' is not up-to-date because:
+  Output property 'outputDir' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/assets/debug/mergeDebugAssets has been removed.
+The input changes require a full rebuild for incremental task ':app:mergeDebugAssets'.
+Resolve mutations for :app:compressDebugAssets (Thread[included builds,5,main]) started.
+:app:compressDebugAssets (Thread[included builds,5,main]) started.
+
+> Task :app:compressDebugAssets
+Caching disabled for task ':app:compressDebugAssets' because:
+  Build cache is disabled
+Task ':app:compressDebugAssets' is not up-to-date because:
+  Output property 'outputDir' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/compressed_assets/debug/compressDebugAssets/out has been removed.
+The input changes require a full rebuild for incremental task ':app:compressDebugAssets'.
+Resolve mutations for :monerokit:processDebugJavaRes (Thread[included builds,5,main]) started.
+:monerokit:processDebugJavaRes (Thread[included builds,5,main]) started.
+
+> Task :monerokit:processDebugJavaRes
+file or directory '/Users/chyngyz/projects/monero-kit-android/monerokit/src/main/resources', not found
+file or directory '/Users/chyngyz/projects/monero-kit-android/monerokit/src/debug/resources', not found
+file or directory '/Users/chyngyz/projects/monero-kit-android/monerokit/src/main/resources', not found
+file or directory '/Users/chyngyz/projects/monero-kit-android/monerokit/src/debug/resources', not found
+Caching disabled for task ':monerokit:processDebugJavaRes' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':monerokit:processDebugJavaRes' is not up-to-date because:
+  Output property 'destinationDir' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/java_res/debug/processDebugJavaRes/out has been removed.
+  Output property 'destinationDir' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/java_res/debug/processDebugJavaRes/out/io has been removed.
+  Output property 'destinationDir' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/java_res/debug/processDebugJavaRes/out/io/horizontalsystems has been removed.
+  and more...
+file or directory '/Users/chyngyz/projects/monero-kit-android/monerokit/src/main/resources', not found
+file or directory '/Users/chyngyz/projects/monero-kit-android/monerokit/src/debug/resources', not found
+file or directory '/Users/chyngyz/projects/monero-kit-android/monerokit/src/main/resources', not found
+file or directory '/Users/chyngyz/projects/monero-kit-android/monerokit/src/debug/resources', not found
+file or directory '/Users/chyngyz/projects/monero-kit-android/monerokit/build/tmp/kotlin-classes/debug', not found
+work action resolve out (project :monerokit) (Thread[included builds,5,main]) started.
+Resolve mutations for :app:checkDebugDuplicateClasses (Thread[included builds,5,main]) started.
+:app:checkDebugDuplicateClasses (Thread[included builds,5,main]) started.
+
+> Task :app:processDebugManifestForPackage
+Custom actions are attached to task ':app:processDebugManifestForPackage'.
+Caching disabled for task ':app:processDebugManifestForPackage' because:
+  Build cache is disabled
+Task ':app:processDebugManifestForPackage' is not up-to-date because:
+  Output property 'packageManifests' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage has been removed.
+  Output property 'packageManifests' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/AndroidManifest.xml has been removed.
+  Output property 'packageManifests' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/output-metadata.json has been removed.
+Resolve mutations for :app:processDebugResources (Thread[Execution worker Thread 4,5,main]) started.
+:app:processDebugResources (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :app:desugarDebugFileDependencies (Thread[Execution worker,5,main]) started.
+:app:desugarDebugFileDependencies (Thread[Execution worker,5,main]) started.
+
+> Task :app:desugarDebugFileDependencies
+Caching disabled for task ':app:desugarDebugFileDependencies' because:
+  Build cache is disabled
+Task ':app:desugarDebugFileDependencies' is not up-to-date because:
+  Output property 'outputDirectory' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/external_file_lib_dex_archives/debug/desugarDebugFileDependencies has been removed.
+Resolve mutations for :monerokit:bundleLibRuntimeToDirDebug (Thread[Execution worker,5,main]) started.
+:monerokit:bundleLibRuntimeToDirDebug (Thread[Execution worker,5,main]) started.
+Resolve mutations for :app:mergeDebugJniLibFolders (Thread[Execution worker Thread 5,5,main]) started.
+:app:mergeDebugJniLibFolders (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:checkDebugDuplicateClasses
+Caching disabled for task ':app:checkDebugDuplicateClasses' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:checkDebugDuplicateClasses' is not up-to-date because:
+  Output property 'dummyOutputDirectory' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/duplicate_classes_check/debug/checkDebugDuplicateClasses has been removed.
+
+> Task :app:mergeDebugJniLibFolders
+Caching disabled for task ':app:mergeDebugJniLibFolders' because:
+  Build cache is disabled
+  Simple merging task
+Task ':app:mergeDebugJniLibFolders' is not up-to-date because:
+  Output property 'outputDir' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/merged_jni_libs/debug/mergeDebugJniLibFolders/out has been removed.
+The input changes require a full rebuild for incremental task ':app:mergeDebugJniLibFolders'.
+Resolve mutations for :app:mergeExtDexDebug (Thread[Execution worker Thread 5,5,main]) started.
+:app:mergeExtDexDebug (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :monerokit:bundleLibRuntimeToDirDebug
+Caching disabled for task ':monerokit:bundleLibRuntimeToDirDebug' because:
+  Build cache is disabled
+  Simple merging task
+Task ':monerokit:bundleLibRuntimeToDirDebug' is not up-to-date because:
+  Output property 'output' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug has been removed.
+  Output property 'output' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io has been removed.
+  Output property 'output' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/horizontalsystems has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':monerokit:bundleLibRuntimeToDirDebug'.
+work action resolve bundleLibRuntimeToDirDebug (project :monerokit) (Thread[Execution worker,5,main]) started.
+ClassesDirToClassesTransform (Thread[Execution worker,5,main]) started.
+Resolve mutations for :monerokit:configureCMakeDebug[arm64-v8a] (Thread[Execution worker Thread 2,5,main]) started.
+:monerokit:configureCMakeDebug[arm64-v8a] (Thread[Execution worker Thread 2,5,main]) started.
+DexingNoClasspathTransform (Thread[Execution worker,5,main]) started.
+
+> Task :monerokit:configureCMakeDebug[arm64-v8a]
+Caching disabled for task ':monerokit:configureCMakeDebug[arm64-v8a]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':monerokit:configureCMakeDebug[arm64-v8a]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: /Users/chyngyz/projects/monero-kit-android/monerokit/CMakeLists.txt debug|arm64-v8a : Start JSON generation. Platform version: 27 min SDK version: arm64-v8a
+C/C++: /Users/chyngyz/projects/monero-kit-android/monerokit/CMakeLists.txt debug|arm64-v8a : JSON '/Users/chyngyz/projects/monero-kit-android/monerokit/.cxx/Debug/3f5r4j1q/arm64-v8a/android_gradle_build.json' was up-to-date
+C/C++: /Users/chyngyz/projects/monero-kit-android/monerokit/CMakeLists.txt debug|arm64-v8a : JSON generation completed without problems
+C/C++: /Users/chyngyz/projects/monero-kit-android/monerokit/CMakeLists.txt debug|arm64-v8a : Writing build model to /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/cxx/Debug/3f5r4j1q/logs/arm64-v8a/build_model.json
+Resolve mutations for :monerokit:buildCMakeDebug[arm64-v8a] (Thread[Execution worker Thread 2,5,main]) started.
+:monerokit:buildCMakeDebug[arm64-v8a] (Thread[Execution worker Thread 2,5,main]) started.
+
+> Transform bundleLibRuntimeToDirDebug (project :monerokit) with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug because:
+  Build cache is disabled
+DexingNoClasspathTransform: /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug is not up-to-date because:
+  Output property 'outputDirectory' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed has been removed.
+  Output property 'outputDirectory' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug has been removed.
+  Output property 'outputDirectory' file /Users/chyngyz/projects/monero-kit-android/monerokit/build/.transforms/242c77c2a1638cfc38c6e286c6d1f273/transformed/bundleLibRuntimeToDirDebug/desugar_graph.bin has been removed.
+  and more...
+The input changes require a full rebuild for incremental DexingNoClasspathTransform: /Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug.
+Running dexing transform non-incrementally for '/Users/chyngyz/projects/monero-kit-android/monerokit/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug'
+
+> Task :app:processDebugResources
+Caching disabled for task ':app:processDebugResources' because:
+  Build cache is disabled
+Task ':app:processDebugResources' is not up-to-date because:
+  Output property 'RClassOutputJar' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar has been removed.
+  Output property 'linkedResourcesOutputDir' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources has been removed.
+  Output property 'linkedResourcesOutputDir' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/linked-resources-binary-format-debug.ap_ has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:processDebugResources'.
+AAPT2 aapt2-8.11.1-12782657-osx Daemon #0: starting
+Aapt output file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/linked-resources-binary-format-debug.ap_
+
+> Task :app:mergeExtDexDebug
+Caching disabled for task ':app:mergeExtDexDebug' because:
+  Build cache is disabled
+Task ':app:mergeExtDexDebug' is not up-to-date because:
+  Output property 'outputDir' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/dex/debug/mergeExtDexDebug has been removed.
+  Output property 'outputDir' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex has been removed.
+  Output property 'outputDir' file /Users/chyngyz/projects/monero-kit-android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:mergeExtDexDebug'.
+Merging to '/Users/chyngyz/projects/monero-kit-android/app/build/intermediates/dex/debug/mergeExtDexDebug' with D8 from all or a subset of dex files in /Users/chyngyz/.gradle/caches/8.13/transforms/b93b479221196d01364b6fc33fca1693/transformed/material-1.12.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/bd7e7c9dabcbc3cd87b5335022a97dff/transformed/appcompat-resources-1.7.1-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/39c3dba80358ef75901bfe2952864f2e/transformed/constraintlayout-2.0.1-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/5bf78741315302f72764c5a3ede7fba3/transformed/appcompat-1.7.1-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/88b821201a3d3e307fd02e8a26c06478/transformed/material3-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/cd3dce241a0afd3e5de68e3f62b3e427/transformed/material-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/b9e8fb8a9eee152e4fc3ef2627b7bb91/transformed/material-ripple-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/173ae31fb37d11c1b7ff91fd633f8832/transformed/foundation-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/1c738be08a09b1e02c01f702b9d735bb/transformed/animation-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/f56e1d5323e3e744bcb654a7ae334eff/transformed/foundation-layout-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/590624f5176b31ee8262fad60b2c6f3f/transformed/animation-core-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/8399b71ffe44a919d84710e08d24b7ba/transformed/ui-tooling-data-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/c2fc46e9b7fd737b362b11e2c76a9d44/transformed/ui-unit-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/5ea64f235fdca7fa2beb5e1231024c1e/transformed/ui-geometry-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/39bc09929240a96ada97d9172e529065/transformed/ui-util-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/57160378211ccfbab7e9e191472bcbee/transformed/ui-text-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/0e88951ede1b1a75286b6b5eb971c1e8/transformed/ui-tooling-preview-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/76af4792d5ab5db4765849d21532b150/transformed/ui-tooling-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/39491e584063100683b98505d0ef1f7f/transformed/ui-graphics-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/310e9f68a4f7e7871ae025111fab5208/transformed/material-icons-core-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/b294fde77ba02ce31ad533556ef3e836/transformed/ui-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/7d263c60f1ffea2054dfabcadeb17b46/transformed/viewpager2-1.0.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/286a570595600883511e16a5cbe92e8c/transformed/fragment-1.5.4-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/c794636182dee7c8185167b26de1223d/transformed/activity-1.10.1-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/7bcb2f79df7ba97c0d2de4cb7709706f/transformed/activity-compose-1.10.1-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/7212896b543f17af86abfc8c60fa8388/transformed/emoji2-views-helper-1.3.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/5de68528bd1d8c3244b10f0d5941dbd3/transformed/emoji2-1.3.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/437f0832a3b82d80647f1b2deb986b09/transformed/drawerlayout-1.1.1-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/faeb1e9af384736ed7379e9a91db7a41/transformed/coordinatorlayout-1.1.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/99795efff2834eef50f1f989de3e5dce/transformed/transition-1.5.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/b77cdd395ce04283da49b4a494478988/transformed/dynamicanimation-1.0.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/27ee6b59e0d0464ab87fb8b3cb6cd78c/transformed/vectordrawable-animated-1.1.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/5fa4581c96d42e80eea56e2e927c45c2/transformed/vectordrawable-1.1.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/117526332574f3c6d3aa24092dea36df/transformed/legacy-support-core-utils-1.0.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/0989cef6aa8473f26b0eb8fbcea3de35/transformed/loader-1.0.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/f2f71ac9bb2eda1963445539251bee4a/transformed/viewpager-1.0.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/171d4435937f97a516315c4b5c0ba1d1/transformed/recyclerview-1.1.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/f51b44dd9e7d9993168cda4d03be935b/transformed/customview-1.1.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/ae07ecf2287e9fe5474519ad5c549ed5/transformed/autofill-1.0.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/1f317794daeab5ee50803bf7d221dced/transformed/graphics-path-1.0.1-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/9eb87b392e84a520045c487493a6253f/transformed/core-1.16.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/d0134fbe3f4ac8af0a1efc3819e58c44/transformed/customview-poolingcontainer-1.0.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/3aa06dcc273460adeb7c0d0d407e399a/transformed/lifecycle-runtime-compose-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/d52d8fe4f5aaf83f3c267b5489c91aa9/transformed/lifecycle-livedata-2.9.2-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/8d87d624c0f2aded189fdcd1ccff5676/transformed/lifecycle-viewmodel-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/ec090a1f85c110082b190b2255f1512b/transformed/savedstate-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/eb4b5e8c13e65ab366aa787475b9c115/transformed/lifecycle-common-jvm-2.9.2, /Users/chyngyz/.gradle/caches/8.13/transforms/b61b87e7cb1ab5dc39f0f7ed0cb31848/transformed/lifecycle-runtime-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/de36133062ceae00f8fe9d0b29c2de78/transformed/lifecycle-livedata-core-2.9.2-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/d1d230784fe7d8bf108d4248e3c079fc/transformed/lifecycle-process-2.9.2-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/e343fa29660898f7e5e6ab0e40561bf7/transformed/lifecycle-viewmodel-savedstate-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/7d1d0499a6e7b9850898ad575cbf80bb/transformed/core-ktx-1.16.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/4ff57b5ed821ae08ffc904f151f1836a/transformed/timber-5.0.1-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/92c5789cc191535df660329e4f91b93e/transformed/runtime-saveable-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/42a69e6350cbd9b098a6efd2b26170ca/transformed/runtime-release-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/dec28d94ef428678fc85a4f3bc3a1073/transformed/annotation-experimental-1.4.1-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/f816498857a1a63811e3a107f62a30be/transformed/core-viewtree-1.0.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/cec5d52812d9326a227b48cc1bf2b005/transformed/kotlinx-coroutines-core-jvm-1.8.1, /Users/chyngyz/.gradle/caches/8.13/transforms/5a0f20296f22282669f8634634353e5e/transformed/kotlinx-coroutines-android-1.8.1, /Users/chyngyz/.gradle/caches/8.13/transforms/5a265a767cc0fa0593d0349586ab60ee/transformed/versionedparcelable-1.1.1-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/5eece0e85bdb9d3a82990b6e50eab6c1/transformed/collection-jvm-1.4.2, /Users/chyngyz/.gradle/caches/8.13/transforms/f62938cd9eeea6a08fbff98d35650cbb/transformed/cursoradapter-1.0.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/a290efb6dfec6f20701dd06dde2e93e0/transformed/resourceinspection-annotation-1.0.1, /Users/chyngyz/.gradle/caches/8.13/transforms/d7b9360660abefc74d06b3b5528642f9/transformed/cardview-1.0.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/1b66f911a6cee2f07ed511ded268183c/transformed/interpolator-1.0.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/425087e0fe4b40e492c2910d03324538/transformed/profileinstaller-1.4.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/b41c60d18dd8301028a91360a7b92db9/transformed/startup-runtime-1.1.1-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/d90b42d1a1b2ca3306c75c71291a5952/transformed/tracing-1.2.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/9c0a70227a63a3b4bc001257d40bae28/transformed/core-runtime-2.2.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/c4a238f2334bcb92b39d22cbfbdfae6b/transformed/core-common-2.2.0, /Users/chyngyz/.gradle/caches/8.13/transforms/df5a37c299cfcd881d2783a65809f2db/transformed/concurrent-futures-1.1.0, /Users/chyngyz/.gradle/caches/8.13/transforms/9ab76084e0a714fda8a48772201265b7/transformed/documentfile-1.0.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/f83c8ba40c539f9f4a84b129c2c9bda1/transformed/localbroadcastmanager-1.0.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/decd2b3d7d23a30a15d1270a5bcefc86/transformed/print-1.0.0-runtime, /Users/chyngyz/.gradle/caches/8.13/transforms/a919b35d15c885cb9f05e577f1f02522/transformed/annotation-jvm-1.9.1, /Users/chyngyz/.gradle/caches/8.13/transforms/0f5fcd985405dd63047fff1bc78e018d/transformed/kotlinx-serialization-core-jvm-1.7.3, /Users/chyngyz/.gradle/caches/8.13/transforms/43bbde87cb6dec65daca652c6729543b/transformed/kotlin-stdlib-2.0.21, /Users/chyngyz/.gradle/caches/8.13/transforms/1974ecb974157df1aa91aad28db4b425/transformed/annotations-23.0.0, /Users/chyngyz/.gradle/caches/8.13/transforms/f32572362126beb9dc0b979ccfe87eda/transformed/guava-33.4.8-android, /Users/chyngyz/.gradle/caches/8.13/transforms/2df652282671abed22798bb84f42030c/transformed/error_prone_annotations-2.36.0, /Users/chyngyz/.gradle/caches/8.13/transforms/1e5c2959d00952bbb92ba34b52c56155/transformed/failureaccess-1.0.3, /Users/chyngyz/.gradle/caches/8.13/transforms/65030fff0aa2fc907869bd60cf08cf7d/transformed/jspecify-1.0.0, /Users/chyngyz/.gradle/caches/8.13/transforms/63cf3250b7f8191aefe7d54611e36643/transformed/j2objc-annotations-3.0.0, /Users/chyngyz/.gradle/caches/8.13/transforms/8081e4d077f1cfef94846e5273b4cc35/transformed/constraintlayout-solver-2.0.1, and from all global synthetics files in 
+
+> Task :monerokit:buildCMakeDebug[arm64-v8a] FAILED
+Caching disabled for task ':monerokit:buildCMakeDebug[arm64-v8a]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':monerokit:buildCMakeDebug[arm64-v8a]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: starting build
+C/C++: reading expected JSONs
+C/C++: done reading expected JSONs
+C/C++: executing build commands for targets that produce .so files or executables
+C/C++: evaluate miniconfig
+C/C++: evaluate library monerujo (arm64-v8a)
+C/C++: building target library monerujo because no targets are specified.
+C/C++: about to build targets monerujo
+C/C++: Build monerujo
+C/C++: /Users/chyngyz/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/chyngyz/projects/monero-kit-android/monerokit/.cxx/Debug/3f5r4j1q/arm64-v8a \
+  monerujo
+
+Starting process 'command '/Users/chyngyz/Library/Android/sdk/cmake/3.22.1/bin/ninja''. Working directory: /Users/chyngyz/projects/monero-kit-android/monerokit Command: /Users/chyngyz/Library/Android/sdk/cmake/3.22.1/bin/ninja -C /Users/chyngyz/projects/monero-kit-android/monerokit/.cxx/Debug/3f5r4j1q/arm64-v8a monerujo
+Successfully started process 'command '/Users/chyngyz/Library/Android/sdk/cmake/3.22.1/bin/ninja''
+C/C++: ninja: Entering directory `/Users/chyngyz/projects/monero-kit-android/monerokit/.cxx/Debug/3f5r4j1q/arm64-v8a'
+C/C++: : && /Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android --gcc-toolchain=/Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/sysroot -fPIC -isystem /Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=27 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -std=c++11 -O0 -fno-limit-debug-info  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -nostdlib++ --sysroot /Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/platforms/android-27/arch-arm64 -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -L/Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/sources/cxx-stl/llvm-libc++/libs/arm64-v8a -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now -shared -Wl,-soname,libmonerujo.so -o ../../../../build/intermediates/cxx/Debug/3f5r4j1q/obj/arm64-v8a/libmonerujo.so CMakeFiles/monerujo.dir/src/main/cpp/monerujo.cpp.o  ../../../../../external-libs/arm64-v8a/monero/libwallet_api.a  ../../../../../external-libs/arm64-v8a/monero/libwallet.a  ../../../../../external-libs/arm64-v8a/monero/libcryptonote_core.a  ../../../../../external-libs/arm64-v8a/monero/libcryptonote_basic.a  ../../../../../external-libs/arm64-v8a/monero/libcryptonote_format_utils_basic.a  ../../../../../external-libs/arm64-v8a/monero/libmnemonics.a  ../../../../../external-libs/arm64-v8a/monero/libringct.a  ../../../../../external-libs/arm64-v8a/monero/libringct_basic.a  ../../../../../external-libs/arm64-v8a/monero/libnet.a  ../../../../../external-libs/arm64-v8a/monero/libcommon.a  ../../../../../external-libs/arm64-v8a/monero/libcncrypto.a  ../../../../../external-libs/arm64-v8a/monero/libblockchain_db.a  ../../../../../external-libs/arm64-v8a/monero/liblmdb.a  ../../../../../external-libs/arm64-v8a/monero/libeasylogging.a  ../../../../../external-libs/arm64-v8a/libunbound.a  ../../../../../external-libs/arm64-v8a/monero/libepee.a  ../../../../../external-libs/arm64-v8a/monero/libblocks.a  ../../../../../external-libs/arm64-v8a/monero/libcheckpoints.a  ../../../../../external-libs/arm64-v8a/monero/libdevice.a  ../../../../../external-libs/arm64-v8a/monero/libdevice_trezor.a  ../../../../../external-libs/arm64-v8a/monero/libmultisig.a  ../../../../../external-libs/arm64-v8a/monero/libversion.a  ../../../../../external-libs/arm64-v8a/monero/librandomx.a  ../../../../../external-libs/arm64-v8a/monero/libhardforks.a  ../../../../../external-libs/arm64-v8a/monero/librpc_base.a  ../../../../../external-libs/arm64-v8a/libboost_chrono.a  ../../../../../external-libs/arm64-v8a/libboost_date_time.a  ../../../../../external-libs/arm64-v8a/libboost_filesystem.a  ../../../../../external-libs/arm64-v8a/libboost_program_options.a  ../../../../../external-libs/arm64-v8a/libboost_regex.a  ../../../../../external-libs/arm64-v8a/libboost_serialization.a  ../../../../../external-libs/arm64-v8a/libboost_system.a  ../../../../../external-libs/arm64-v8a/libboost_thread.a  ../../../../../external-libs/arm64-v8a/libboost_wserialization.a  ../../../../../external-libs/arm64-v8a/libssl.a  ../../../../../external-libs/arm64-v8a/libcrypto.a  ../../../../../external-libs/arm64-v8a/libsodium.a  /Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/platforms/android-27/arch-arm64/usr/lib/liblog.so  -latomic -lm "/Users/chyngyz/Library/Android/sdk/ndk/17.2.4988734/sources/cxx-stl/llvm-libc++/libs/arm64-v8a/libc++_shared.so" && :
+C/C++: clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+C/C++: ninja: build stopped: subcommand failed.
+C/C++: Received process result: 1
+AAPT2 aapt2-8.11.1-12782657-osx Daemon #0: shutdown
+
+[Incubating] Problems report is available at: file:///Users/chyngyz/projects/monero-kit-android/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+39 actionable tasks: 39 executed
+Watched directory hierarchies: [/Users/chyngyz/projects/monero-kit-android]
