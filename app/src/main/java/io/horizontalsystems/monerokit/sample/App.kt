@@ -26,7 +26,12 @@ class App: Application() {
 //            walletId
 //        )
 
-        kit = MoneroKit(this)
+        kit = MoneroKit.getInstance(
+            application = this,
+            words = "spout justice gels large agile ladder weavers dice utmost ought reduce nomad ashtray biscuit boyfriend cadets uncle hashing hounded touchy october sawmill nagged oozed touchy".split(" "),
+            restoreDateOrHeight = "3409492",
+            walletId = "wallet_id_123"
+        )
     }
 
     companion object {

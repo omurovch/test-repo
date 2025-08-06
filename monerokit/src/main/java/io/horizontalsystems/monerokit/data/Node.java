@@ -106,9 +106,9 @@ public class Node {
     @Getter
     @Setter
     private String password = "";
-    @Getter
-    @Setter
-    private boolean favourite = false;
+//    @Getter
+//    @Setter
+    public boolean favourite = false;
     @Getter
     @Setter
     private boolean selected = false;
