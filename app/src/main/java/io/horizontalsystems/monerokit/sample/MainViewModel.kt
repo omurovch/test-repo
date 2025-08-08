@@ -7,6 +7,7 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import io.horizontalsystems.monerokit.SyncState
+import io.horizontalsystems.monerokit.util.NetCipherHelper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.math.BigDecimal
@@ -33,6 +34,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         )
     )
         private set
+
+    init {
+        NetCipherHelper.createInstance(App.instance)
+    }
 
     //
 //    init {
@@ -98,7 +103,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     fun start() {
         viewModelScope.launch(Dispatchers.Default) {
 //            kit.restoreWallet()
-            kit.openWallet()
+//            kit.openWallet()
+            kit.start()
+
         }
     }
 

@@ -4,16 +4,17 @@ import android.app.Application
 import io.horizontalsystems.monerokit.MoneroKit
 import timber.log.Timber
 
-class App: Application() {
+class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
         initKit()
+        instance = this
     }
 
     private fun initKit() {
 //        if (BuildConfig.DEBUG) {
-            Timber.plant(Timber.DebugTree())
+        Timber.plant(Timber.DebugTree())
 //        }
 //        val walletId = "wallet-${stellarWallet.javaClass.simpleName}"
 ////        val walletId = UUID.randomUUID().toString()
@@ -26,16 +27,19 @@ class App: Application() {
 //            walletId
 //        )
 
+
         kit = MoneroKit.getInstance(
             application = this,
-            words = "spout justice gels large agile ladder weavers dice utmost ought reduce nomad ashtray biscuit boyfriend cadets uncle hashing hounded touchy october sawmill nagged oozed touchy".split(" "),
-            restoreDateOrHeight = "3409492",
-            walletId = "wallet_id_123"
+            words = "".split(" "),
+            restoreDateOrHeight = "3438000",
+            walletId = "wallet_id_111"
         )
     }
 
     companion object {
-//        val stellarWallet = StellarWallet.WatchOnly("GADCIJ2UKQRWG6WHHPFKKLX7BYAWL7HDL54RUZO7M7UIHNQZL63C2I4Z")
+        //        val stellarWallet = StellarWallet.WatchOnly("GADCIJ2UKQRWG6WHHPFKKLX7BYAWL7HDL54RUZO7M7UIHNQZL63C2I4Z")
+        lateinit var instance: Application
+            private set
 
         lateinit var kit: MoneroKit
     }

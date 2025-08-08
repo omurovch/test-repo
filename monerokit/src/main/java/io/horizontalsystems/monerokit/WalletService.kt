@@ -6,6 +6,9 @@ import io.horizontalsystems.monerokit.model.Wallet
 import io.horizontalsystems.monerokit.model.WalletListener
 import io.horizontalsystems.monerokit.model.WalletManager
 import io.horizontalsystems.monerokit.util.Helper
+import io.horizontalsystems.monerokit.util.NetCipherHelper
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import timber.log.Timber
 
 class WalletService(private val context: Context) {
@@ -39,23 +42,32 @@ class WalletService(private val context: Context) {
         Timber.d("Observer set: %s", observer)
     }
 
-    fun getWallet(): Wallet? = WalletManager.getInstance().wallet
+    fun getWallet(): Wallet? {
+        return WalletManager.getInstance().wallet
+    }
+
     fun getDaemonHeight(): Long = daemonHeight
     fun getConnectionStatus(): Wallet.ConnectionStatus = connectionStatus
 
-    suspend fun start(walletName: String, walletPassword: String): Wallet.Status? {
+    suspend fun start(walletName: String, walletPassword: String): Wallet.Status? = withContext(Dispatchers.IO) {
         Timber.d("start()")
         showProgress(10)
         running = true
 
         if (listener == null) {
-            val wallet = loadWallet(walletName, walletPassword) ?: return null
+            Timber.d("start() loadWallet")
+            val wallet = loadWallet(walletName, walletPassword) ?: return@withContext null
+
+            Timber.d("wallet address %s, restore height: %d", wallet.address, wallet.restoreHeight)
+
             val walletStatus = wallet.fullStatus
             if (!walletStatus.isOk) {
                 wallet.close()
-                return walletStatus
+                return@withContext walletStatus
             }
-            listener = MyWalletListener().apply { start() }
+            listener = MyWalletListener()
+            listener!!.start()
+//            listener = MyWalletListener().apply { start() }
             showProgress(100)
         }
         showProgress(101)
@@ -70,7 +82,13 @@ class WalletService(private val context: Context) {
             errorState = true
             stop()
         }
-        return walletStatus
+        return@withContext walletStatus
+    }
+
+    fun storeWallet() {
+        getWallet()?.store()?.let {
+            observer?.onWalletStored(it)
+        }
     }
 
     fun stop() {
@@ -91,24 +109,32 @@ class WalletService(private val context: Context) {
         val wallet = openWallet(walletName, walletPassword) ?: return null
         Timber.d("Using daemon %s", WalletManager.getInstance().daemonAddress)
         wallet.init(0)
+        wallet.setProxy(NetCipherHelper.getProxy())
         return wallet
     }
 
     private fun openWallet(walletName: String, walletPassword: String): Wallet? {
         val path = Helper.getWalletFile(context, walletName).absolutePath
         val walletMgr = WalletManager.getInstance()
+        Timber.d("WalletManager network=%s", walletMgr.networkType.name)
 
         return if (walletMgr.walletExists(path)) {
             Timber.d("open wallet %s", path)
             val device = walletMgr.queryWalletDevice("$path.keys", walletPassword)
             observer?.onWalletOpen(device)
             val wallet = walletMgr.openWallet(path, walletPassword)
+
+            Timber.d("wallet opened")
+
             if (!wallet.status.isOk) {
                 Timber.d("wallet status is %s", wallet.status)
                 walletMgr.close(wallet)
                 null
             } else wallet
-        } else null
+        } else {
+            Timber.d("service.openWallet wallet path does not exists %s", path)
+            null
+        }
     }
 
     private fun updateDaemonState(wallet: Wallet, height: Long) {
@@ -157,35 +183,28 @@ class WalletService(private val context: Context) {
         override fun unconfirmedMoneyReceived(txId: String, amount: Long) = Timber.d("unconfirmedMoneyReceived() $amount @ $txId")
 
         override fun newBlock(height: Long) {
-            Timber.d("newBlock() @ %d", height)
-            val wallet = getWallet() ?: throw IllegalStateException("No wallet!")
+            val wallet: Wallet? = getWallet()
+            checkNotNull(wallet) { "No wallet!" }
 
-            Timber.d("newBlock() @ %d -> wallet %s", height, wallet.name)
-
-            if (System.currentTimeMillis() - lastBlockTime > 2000) {
-                Timber.d("newBlock() 1")
+            // don't flood with an update for every block ...
+            if (lastBlockTime < System.currentTimeMillis() - 2000) {
                 lastBlockTime = System.currentTimeMillis()
-                updateDaemonState(wallet, if (wallet.isSynchronized) height else 0)
-
-                Timber.d("newBlock() 2")
-
-                if (!wallet.isSynchronized) {
-                    Timber.d("newBlock() 3")
-                    updated = true
-                    wallet.refreshHistory()
-                    val txCount = wallet.history.count
-
-                    Timber.d("txCount %d", txCount)
-                    Timber.d("balance %d", wallet.balance)
-                    Timber.d("txCount > lastTxCount %b", txCount > lastTxCount)
-
-                    if (txCount > lastTxCount) {
-                        lastTxCount = txCount
-                        observer?.onRefreshed(wallet, true)
+                Timber.d("newBlock() @ %d with observer %s", height, observer)
+                if (observer != null) {
+                    var fullRefresh = false
+                    updateDaemonState(wallet, if (wallet.isSynchronized) height else 0)
+                    if (!wallet.isSynchronized) {
+                        updated = true
+                        // we want to see our transactions as they come in
+                        wallet.refreshHistory()
+                        val txCount = wallet.getHistory().getCount()
+                        if (txCount > lastTxCount) {
+                            // update the transaction list only if we have more than before
+                            lastTxCount = txCount
+                            fullRefresh = true
+                        }
                     }
-                } else {
-                    Timber.d("newBlock() 4")
-                    observer?.onRefreshed(wallet, false)
+                    if (observer != null) observer!!.onRefreshed(wallet, fullRefresh)
                 }
             }
         }
@@ -202,7 +221,10 @@ class WalletService(private val context: Context) {
             if (updated) {
                 updateDaemonState(wallet, wallet.blockChainHeight)
                 wallet.refreshHistory()
-                updated = !(observer?.onRefreshed(wallet, true) ?: false)
+                if (observer != null) {
+                    updated = !observer!!.onRefreshed(wallet, true)
+                }
+//                updated = !(observer?.onRefreshed(wallet, true) ?: false)
             }
         }
     }

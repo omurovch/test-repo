@@ -6,8 +6,8 @@ import android.util.Log
 import io.horizontalsystems.monerokit.data.Node
 import io.horizontalsystems.monerokit.model.NetworkType
 import io.horizontalsystems.monerokit.model.PendingTransaction
+import io.horizontalsystems.monerokit.model.TransactionInfo
 import io.horizontalsystems.monerokit.model.Wallet
-import io.horizontalsystems.monerokit.model.WalletListener
 import io.horizontalsystems.monerokit.model.WalletManager
 import io.horizontalsystems.monerokit.util.Helper
 import io.horizontalsystems.monerokit.util.NodeHelper
@@ -25,11 +25,12 @@ class MoneroKit(
     private val walletId: String,
     private val walletService: WalletService,
     private val context: Context
-) : WalletListener, WalletService.Observer {
+) : WalletService.Observer {
 
     private val node = "nodex.monerujo.io:18081/mainnet/monerujo.io?rc=200?v=16&h=3458441&ts=1752868953&t=225.496692ms"
     private val node2 = "xmr-node.cakewallet.com:18081/mainnet/cakewallet.com"
 
+    private var synced = false
 
     suspend fun start() {
         createWalletIfNotExists()
@@ -85,6 +86,12 @@ class MoneroKit(
         val newWallet = WalletManager.getInstance().recoveryWallet(newWalletFile, walletPassword, mnemonic, offset, restoreHeight)
         val success = checkAndCloseWallet(newWallet)
 
+        val walletFile = File(walletFolder, walletId)
+        Timber.d("New Wallet delete %s", walletFile.absolutePath)
+        // NEXT line is VERY important for correct update
+        walletFile.delete() // when recovering wallets, the cache seems corrupt - so remove it
+
+
         if (success) {
             Timber.i("Created wallet in %s", newWalletFile.absolutePath)
             return@withContext
@@ -97,6 +104,24 @@ class MoneroKit(
     // Observer ====================================
     override fun onRefreshed(wallet: Wallet, full: Boolean): Boolean {
         Log.e("eee", "observer.onRefreshed()\n - wallet: ${wallet.fullStatus}\n - full: $full")
+
+        val historyAll: List<TransactionInfo?>? = wallet.history.all
+        Log.e("eee", "historyAll: ${historyAll?.count()}")
+
+        if (historyAll != null) {
+            Log.e("eee", "txs: ${historyAll.joinToString(separator = "\n")}")
+        }
+
+
+        if (wallet.isSynchronized) {
+            Log.e("eee", "wallet is synced, first sync = ${!synced}")
+            if (!synced) { // first sync
+                onProgress(-1)
+                walletService.storeWallet() // save on first sync
+                synced = true
+            }
+        }
+
         return true
     }
 
@@ -150,7 +175,7 @@ class MoneroKit(
 
             Timber.d("Using daemon %s", walletManager.getDaemonAddress())
 
-            wallet.setListener(this)
+//            wallet.setListener(this)
 
             wallet.init(0)
             Timber.i("fullStatus: ${wallet.fullStatus} ")
@@ -199,29 +224,29 @@ class MoneroKit(
         return walletStatus.isOk()
     }
 
-    override fun moneySpent(txId: String?, amount: Long) {
-        Timber.d("moneySpent() %d @ %s", amount, txId)
-    }
+//    override fun moneySpent(txId: String?, amount: Long) {
+//        Timber.d("moneySpent() %d @ %s", amount, txId)
+//    }
 
-    override fun moneyReceived(txId: String?, amount: Long) {
-        Timber.d("moneyReceived() %d @ %s", amount, txId)
-    }
+//    override fun moneyReceived(txId: String?, amount: Long) {
+//        Timber.d("moneyReceived() %d @ %s", amount, txId)
+//    }
 
-    override fun unconfirmedMoneyReceived(txId: String?, amount: Long) {
-        Timber.d("unconfirmedMoneyReceived() %d @ %s", amount, txId)
-    }
-
-    override fun newBlock(height: Long) {
-        Timber.d("newBlock() @ %d", height)
-    }
-
-    override fun updated() {
-        Timber.d("updated()")
-    }
-
-    override fun refreshed() {
-        Timber.d("refreshed()")
-    }
+//    override fun unconfirmedMoneyReceived(txId: String?, amount: Long) {
+//        Timber.d("unconfirmedMoneyReceived() %d @ %s", amount, txId)
+//    }
+//
+//    override fun newBlock(height: Long) {
+//        Timber.d("newBlock() @ %d", height)
+//    }
+//
+//    override fun updated() {
+//        Timber.d("updated()")
+//    }
+//
+//    override fun refreshed() {
+//        Timber.d("WalletListener::refreshed()")
+//    }
 
     companion object {
         fun getInstance(
@@ -232,6 +257,8 @@ class MoneroKit(
         ): MoneroKit {
             val walletService = WalletService(application)
             val restoreHeight = getHeight(restoreDateOrHeight)
+
+            Log.e("eee", "computed restoreHeight = $restoreHeight")
 
             return MoneroKit(words.joinToString(" "), restoreHeight, walletId, walletService, application)
         }
