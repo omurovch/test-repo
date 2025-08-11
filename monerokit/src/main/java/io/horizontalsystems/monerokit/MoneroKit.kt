@@ -10,9 +10,13 @@ import io.horizontalsystems.monerokit.model.TransactionInfo
 import io.horizontalsystems.monerokit.model.Wallet
 import io.horizontalsystems.monerokit.model.WalletManager
 import io.horizontalsystems.monerokit.util.Helper
+import io.horizontalsystems.monerokit.util.NetCipherHelper
 import io.horizontalsystems.monerokit.util.NodeHelper
 import io.horizontalsystems.monerokit.util.RestoreHeight
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.cancel
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import timber.log.Timber
 import java.io.File
@@ -30,20 +34,42 @@ class MoneroKit(
     private val node = "nodex.monerujo.io:18081/mainnet/monerujo.io?rc=200?v=16&h=3458441&ts=1752868953&t=225.496692ms"
     private val node2 = "xmr-node.cakewallet.com:18081/mainnet/cakewallet.com"
 
+    private var scope: CoroutineScope? = null
+
+    private var started = false
     private var synced = false
 
-    suspend fun start() {
-        createWalletIfNotExists()
+    fun start() {
+        if (started) return
+        started = true
 
-        val nodes = NodeHelper.getOrPopulateFavourites()
-        val node = NodeHelper.autoselect(nodes)
+        scope = CoroutineScope(Dispatchers.IO)
 
-        WalletManager.getInstance().setDaemon(node)
+        scope?.launch {
+            createWalletIfNotExists()
 
-        walletService.setObserver(this)
-        val status = walletService.start(walletId, "")
+            val nodes = NodeHelper.getOrPopulateFavourites()
+            val node = NodeHelper.autoselect(nodes)
 
-        Log.e("eee", "status after start: $status")
+            Log.e("eee", "selected node: ${node?.name}")
+
+            WalletManager.getInstance().setDaemon(node)
+
+            walletService.setObserver(this@MoneroKit)
+            val status = walletService.start(walletId, "")
+
+            Log.e("eee", "status after start: $status")
+        }
+    }
+
+    fun stop() {
+        if (!started) return
+        started = false
+
+        scope?.launch {
+            walletService.stop()
+        }
+        scope?.cancel()
     }
 
     suspend fun restoreHeightForNewWallet(): Long {
@@ -82,7 +108,7 @@ class MoneroKit(
 
         val newWalletFile = File(walletFolder, walletId)
         val walletPassword = "" // TODO
-        val offset = "" // TODO
+        val offset = "" // TODO mnemonic passphrase?
         val newWallet = WalletManager.getInstance().recoveryWallet(newWalletFile, walletPassword, mnemonic, offset, restoreHeight)
         val success = checkAndCloseWallet(newWallet)
 
@@ -250,17 +276,19 @@ class MoneroKit(
 
     companion object {
         fun getInstance(
-            application: Application,
+            context: Context,
             words: List<String>,
             restoreDateOrHeight: String,
             walletId: String
         ): MoneroKit {
-            val walletService = WalletService(application)
+            val walletService = WalletService(context)
             val restoreHeight = getHeight(restoreDateOrHeight)
 
             Log.e("eee", "computed restoreHeight = $restoreHeight")
 
-            return MoneroKit(words.joinToString(" "), restoreHeight, walletId, walletService, application)
+            NetCipherHelper.createInstance(context)
+
+            return MoneroKit(words.joinToString(" "), restoreHeight, walletId, walletService, context)
         }
 
         private fun getHeight(input: String): Long {

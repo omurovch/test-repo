@@ -36,7 +36,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         private set
 
     init {
-        NetCipherHelper.createInstance(App.instance)
+//        NetCipherHelper.createInstance(App.instance)
     }
 
     //
@@ -101,16 +101,18 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 //    }
 //
     fun start() {
-        viewModelScope.launch(Dispatchers.Default) {
+//        viewModelScope.launch(Dispatchers.Default) {
 //            kit.restoreWallet()
 //            kit.openWallet()
             kit.start()
 
-        }
+//        }
     }
 
     fun stop() {
-//        kit.stop()
+        viewModelScope.launch {
+            kit.stop()
+        }
     }
 }
 

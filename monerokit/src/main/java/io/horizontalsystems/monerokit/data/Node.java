@@ -89,8 +89,7 @@ public class Node {
         }
     }
 
-    @Getter
-    private String name = null;
+    public String name = null;
     @Getter
     final private NetworkType networkType;
     Address hostAddress;

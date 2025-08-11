@@ -65,9 +65,9 @@ class WalletService(private val context: Context) {
                 wallet.close()
                 return@withContext walletStatus
             }
-            listener = MyWalletListener()
-            listener!!.start()
-//            listener = MyWalletListener().apply { start() }
+//            listener = MyWalletListener()
+//            listener!!.start()
+            listener = MyWalletListener().apply { start() }
             showProgress(100)
         }
         showProgress(101)
@@ -91,7 +91,7 @@ class WalletService(private val context: Context) {
         }
     }
 
-    fun stop() {
+    suspend fun stop() = withContext(Dispatchers.IO) {
         Timber.d("stop()")
         setObserver(null)
         listener?.let {
@@ -107,7 +107,7 @@ class WalletService(private val context: Context) {
 
     private fun loadWallet(walletName: String, walletPassword: String): Wallet? {
         val wallet = openWallet(walletName, walletPassword) ?: return null
-        Timber.d("Using daemon %s", WalletManager.getInstance().daemonAddress)
+        Timber.d("Using daemon %s",  WalletManager.getInstance().daemonAddress)
         wallet.init(0)
         wallet.setProxy(NetCipherHelper.getProxy())
         return wallet
@@ -204,7 +204,7 @@ class WalletService(private val context: Context) {
                             fullRefresh = true
                         }
                     }
-                    if (observer != null) observer!!.onRefreshed(wallet, fullRefresh)
+                    observer?.onRefreshed(wallet, fullRefresh)
                 }
             }
         }
