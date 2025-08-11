@@ -6,7 +6,7 @@ add_library( monerujo
              SHARED
              src/main/cpp/monerujo.cpp )
 
-set(EXTERNAL_LIBS_DIR ${CMAKE_SOURCE_DIR}/../external-libs)
+set(EXTERNAL_LIBS_DIR ${CMAKE_SOURCE_DIR}/external-libs)
 
 ############
 # libsodium
