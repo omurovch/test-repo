@@ -36,7 +36,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             kit.syncStateFlow.collect(::updateSyncState)
         }
         viewModelScope.launch(Dispatchers.Default) {
-            kit.allTransactions.collect {
+            kit.allTransactionsFlow.collect {
                 Log.e("eee", "txs: ${it.joinToString(separator = "\n")}")
             }
         }

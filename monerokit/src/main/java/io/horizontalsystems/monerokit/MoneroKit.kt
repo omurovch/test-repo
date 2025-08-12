@@ -53,7 +53,7 @@ class MoneroKit(
     val lastBlockUpdatedFlow: StateFlow<Unit> = _lastBlockUpdatedFlow
 
     private val _allTransactionsFlow = MutableStateFlow<List<TransactionInfo>>(emptyList())
-    val allTransactions: StateFlow<List<TransactionInfo>> = _allTransactionsFlow
+    val allTransactionsFlow: StateFlow<List<TransactionInfo>> = _allTransactionsFlow
 
     val receiveAddress: String
         get() = try {
@@ -103,10 +103,15 @@ class MoneroKit(
         if (!started) return
         started = false
 
+        Log.e("eee", "kit.stop() before launch scope = $scope")
         scope?.launch {
+            Log.e("eee", "kit.stop() before service.stop()")
             walletService.stop()
+            Log.e("eee", "kit.stop() after service.stop()")
         }
+        Log.e("eee", "kit.stop() after launch ")
         scope?.cancel()
+        Log.e("eee", "kit.stop() after cancel ")
         scope = null
     }
 
