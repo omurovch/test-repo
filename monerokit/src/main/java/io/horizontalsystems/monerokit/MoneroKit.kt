@@ -189,8 +189,12 @@ class MoneroKit(
                 walletHeight,
                 remainingBlocks
             )
-
-            val progress: Double = 1 - remainingBlocks / (1.toDouble() * daemonHeight - firstBlock)
+            val totalBlocks = daemonHeight - firstBlock
+            val progress: Double = if (totalBlocks > 0) {
+                1 - remainingBlocks.toDouble() / totalBlocks
+            } else {
+                1.0
+            }
 
             _syncStateFlow.update {
                 SyncState.Syncing(progress)
