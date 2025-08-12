@@ -35,19 +35,16 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         viewModelScope.launch(Dispatchers.Default) {
             kit.syncStateFlow.collect(::updateSyncState)
         }
-//        viewModelScope.launch(Dispatchers.Default) {
-//            kit.operationsSyncStateFlow.collect(::updateOperationsSyncState)
-//        }
+        viewModelScope.launch(Dispatchers.Default) {
+            kit.allTransactions.collect {
+                Log.e("eee", "txs: ${it.joinToString(separator = "\n")}")
+            }
+        }
         viewModelScope.launch(Dispatchers.Default) {
             kit.balanceFlow.collect {
                 updateBalance(it)
             }
         }
-//        viewModelScope.launch(Dispatchers.Default) {
-//            kit.assetBalanceMapFlow.collect {
-//                updateAssetBalanceMap(it)
-//            }
-//        }
     }
 
     private fun updateBalance(balance: Long?) {
@@ -68,13 +65,6 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         return amount.movePointLeft(decimal).stripTrailingZeros()
     }
 
-    //
-//    private fun updateOperationsSyncState(syncState: SyncState) {
-//        this.operationsSyncState = syncState
-//
-//        emitState()
-//    }
-//
     override fun onCleared() {
         kit.stop()
     }
@@ -89,20 +79,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun start() {
-        viewModelScope.launch(Dispatchers.Default) {
-            kit.syncStateFlow.collect {
-                Log.e("eee", "syncState: $it")
-
-            }
-        }
-
         kit.start()
     }
 
     fun stop() {
-        viewModelScope.launch {
-            kit.stop()
-        }
+        kit.stop()
     }
 }
 

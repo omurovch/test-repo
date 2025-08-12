@@ -7,6 +7,7 @@ import io.horizontalsystems.monerokit.model.NetworkType
 import io.horizontalsystems.monerokit.model.PendingTransaction
 import io.horizontalsystems.monerokit.model.TransactionInfo
 import io.horizontalsystems.monerokit.model.Wallet
+import io.horizontalsystems.monerokit.model.Wallet.ConnectionStatus.ConnectionStatus_Connected
 import io.horizontalsystems.monerokit.model.WalletManager
 import io.horizontalsystems.monerokit.util.Helper
 import io.horizontalsystems.monerokit.util.NetCipherHelper
@@ -16,6 +17,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
@@ -47,6 +49,12 @@ class MoneroKit(
     private val _balanceFlow = MutableStateFlow<Long>(0)
     val balanceFlow = _balanceFlow.asStateFlow()
 
+    private val _lastBlockUpdatedFlow = MutableStateFlow(Unit)
+    val lastBlockUpdatedFlow: StateFlow<Unit> = _lastBlockUpdatedFlow
+
+    private val _allTransactionsFlow = MutableStateFlow<List<TransactionInfo>>(emptyList())
+    val allTransactions: StateFlow<List<TransactionInfo>> = _allTransactionsFlow
+
     val receiveAddress: String
         get() = try {
             walletService.getWallet()?.address ?: throw IllegalStateException("Wallet is NULL")
@@ -57,6 +65,12 @@ class MoneroKit(
 
     val balance: Long
         get() = _balanceFlow.value
+
+    val lastBlockHeight: Long?
+        get() = if (walletService.getConnectionStatus() == ConnectionStatus_Connected)
+            walletService.getDaemonHeight()
+        else
+            null
 
     fun start() {
         if (started) return
@@ -161,7 +175,9 @@ class MoneroKit(
         Log.e("eee", "historyAll: ${historyAll?.count()}")
 
         if (historyAll != null) {
-            Log.e("eee", "txs: ${historyAll.joinToString(separator = "\n")}")
+            _allTransactionsFlow.update {
+                historyAll.mapNotNull { it }
+            }
         }
 
 
@@ -205,6 +221,8 @@ class MoneroKit(
                 SyncState.Synced
             }
         }
+
+        _lastBlockUpdatedFlow.update { }
 
         _balanceFlow.update {
             walletService.getWallet()?.balance ?: 0L
