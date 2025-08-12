@@ -2,7 +2,7 @@ package io.horizontalsystems.monerokit
 
 sealed class SyncState(val description: String) {
     object Synced : SyncState("Synced")
-    object Syncing : SyncState("Syncing")
+    data class Syncing(val progress: Double? = null) : SyncState("Syncing")
     data class NotSynced(val error: Throwable) : SyncState("Not Synced: ${error.message}")
 
     override fun equals(other: Any?): Boolean {
@@ -20,5 +20,13 @@ sealed class SyncState(val description: String) {
 
     override fun hashCode(): Int {
         return javaClass.hashCode()
+    }
+
+    override fun toString(): String {
+       return when (this) {
+            is NotSynced -> "NotSynced"
+            Synced -> "Synced"
+            is Syncing -> "Syncing $progress * 100"
+        }
     }
 }

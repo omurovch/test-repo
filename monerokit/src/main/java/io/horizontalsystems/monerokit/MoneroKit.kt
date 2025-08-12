@@ -1,6 +1,5 @@
 package io.horizontalsystems.monerokit
 
-import android.app.Application
 import android.content.Context
 import android.util.Log
 import io.horizontalsystems.monerokit.data.Node
@@ -16,6 +15,9 @@ import io.horizontalsystems.monerokit.util.RestoreHeight
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import timber.log.Timber
@@ -39,9 +41,30 @@ class MoneroKit(
     private var started = false
     private var synced = false
 
+    private val _syncStateFlow = MutableStateFlow<SyncState>(SyncState.NotSynced(SyncError.NotStarted))
+    val syncStateFlow = _syncStateFlow.asStateFlow()
+
+    private val _balanceFlow = MutableStateFlow<Long>(0)
+    val balanceFlow = _balanceFlow.asStateFlow()
+
+    val receiveAddress: String
+        get() = try {
+            walletService.getWallet()?.address ?: throw IllegalStateException("Wallet is NULL")
+        } catch (e: Exception) {
+            Log.e("MoneroKit", "getAddress", e)
+            ""
+        }
+
+    val balance: Long
+        get() = _balanceFlow.value
+
     fun start() {
         if (started) return
         started = true
+
+        _syncStateFlow.update {
+            SyncState.Syncing()
+        }
 
         scope = CoroutineScope(Dispatchers.IO)
 
@@ -128,6 +151,8 @@ class MoneroKit(
     }
 
     // Observer ====================================
+    private var firstBlock: Long = 0
+
     override fun onRefreshed(wallet: Wallet, full: Boolean): Boolean {
         Log.e("eee", "observer.onRefreshed()\n - wallet: ${wallet.fullStatus}\n - full: $full")
 
@@ -146,6 +171,38 @@ class MoneroKit(
                 walletService.storeWallet() // save on first sync
                 synced = true
             }
+        }
+
+        if (!wallet.isSynchronized) {
+            val daemonHeight: Long = walletService.getDaemonHeight()
+            val walletHeight = wallet.getBlockChainHeight()
+            val remainingBlocks = daemonHeight - walletHeight
+
+            if (firstBlock == 0L) {
+                firstBlock = walletHeight
+            }
+
+            Timber.i(
+                "firstBlock: %d, daemonHeight: %d, walletHeight: %d, remainingBlocks: %d",
+                firstBlock,
+                daemonHeight,
+                walletHeight,
+                remainingBlocks
+            )
+
+            val progress: Double = 1 - remainingBlocks / (1.toDouble() * daemonHeight - firstBlock)
+
+            _syncStateFlow.update {
+                SyncState.Syncing(progress)
+            }
+        } else {
+            _syncStateFlow.update {
+                SyncState.Synced
+            }
+        }
+
+        _balanceFlow.update {
+            walletService.getWallet()?.balance ?: 0L
         }
 
         return true
@@ -273,6 +330,12 @@ class MoneroKit(
 //    override fun refreshed() {
 //        Timber.d("WalletListener::refreshed()")
 //    }
+
+    sealed class SyncError : Error() {
+        object NotStarted : SyncError() {
+            override val message = "Not Started"
+        }
+    }
 
     companion object {
         fun getInstance(

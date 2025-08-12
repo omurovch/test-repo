@@ -215,9 +215,9 @@ class WalletService(private val context: Context) {
         }
 
         override fun refreshed() {
-            Timber.d("refreshed()")
+            Timber.d("refreshed() updated= %b", updated )
             val wallet = getWallet() ?: throw IllegalStateException("No wallet!")
-            wallet.setSynchronized()
+            wallet.setSynchronized() // TODO sometimes called even if sync is not complete
             if (updated) {
                 updateDaemonState(wallet, wallet.blockChainHeight)
                 wallet.refreshHistory()

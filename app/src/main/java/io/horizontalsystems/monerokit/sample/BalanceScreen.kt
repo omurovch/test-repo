@@ -21,9 +21,7 @@ fun BalanceScreen(viewModel: MainViewModel, uiState: MainUiState, navController:
         Column {
             Text(text = "Address: $address")
             Text(text = "Balance: ${uiState.totalBalance}")
-            Text(text = "Minimum Balance: ${uiState.minimumBalance}")
-            Text(text = "Sync State: ${uiState.syncState.description}")
-            Text(text = "Operations Sync State: ${uiState.operationsSyncState.description}")
+            Text(text = "Sync State: ${uiState.syncState}")
 
             Spacer(modifier = Modifier.height(20.dp))
 

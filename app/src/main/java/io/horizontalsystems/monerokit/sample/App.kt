@@ -29,7 +29,7 @@ class App : Application() {
 
 
         kit = MoneroKit.getInstance(
-            application = this,
+            context = this,
             words = "".split(" "),
             restoreDateOrHeight = "3438000",
             walletId = "wallet_id_111"
