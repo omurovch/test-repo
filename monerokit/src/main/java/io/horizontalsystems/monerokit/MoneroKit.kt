@@ -108,11 +108,11 @@ class MoneroKit(
             Log.e("eee", "kit.stop() before service.stop()")
             walletService.stop()
             Log.e("eee", "kit.stop() after service.stop()")
+            scope?.cancel()
+            Log.e("eee", "kit.stop() after cancel ")
+            scope = null
         }
         Log.e("eee", "kit.stop() after launch ")
-        scope?.cancel()
-        Log.e("eee", "kit.stop() after cancel ")
-        scope = null
     }
 
     suspend fun restoreHeightForNewWallet(): Long {
