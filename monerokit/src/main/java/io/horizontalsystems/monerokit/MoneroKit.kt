@@ -93,6 +93,7 @@ class MoneroKit(
             walletService.stop()
         }
         scope?.cancel()
+        scope = null
     }
 
     suspend fun restoreHeightForNewWallet(): Long {
