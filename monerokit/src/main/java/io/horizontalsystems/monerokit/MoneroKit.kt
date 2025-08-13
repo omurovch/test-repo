@@ -3,6 +3,8 @@ package io.horizontalsystems.monerokit
 import android.content.Context
 import android.util.Log
 import io.horizontalsystems.monerokit.data.Node
+import io.horizontalsystems.monerokit.data.TxData
+import io.horizontalsystems.monerokit.data.UserNotes
 import io.horizontalsystems.monerokit.model.NetworkType
 import io.horizontalsystems.monerokit.model.PendingTransaction
 import io.horizontalsystems.monerokit.model.TransactionInfo
@@ -114,6 +116,43 @@ class MoneroKit(
         }
         Log.e("eee", "kit.stop() after launch ")
     }
+
+    fun send(
+        amount: Long,
+        address: String,
+        memo: String?
+    ) {
+        val txData = buildTxData(amount, address, memo)
+
+        walletService.createTransaction(txData)
+        walletService.sendTransaction(memo)
+    }
+
+    fun estimateFee(
+        amount: Long,
+        address: String,
+        memo: String?
+    ): Long {
+        val wallet = walletService.getWallet() ?: throw IllegalStateException("Wallet is NULL")
+        val txData = buildTxData(amount, address, memo)
+
+        return wallet.estimateTransactionFee(txData)
+    }
+
+    private fun buildTxData(
+        amount: Long,
+        destination: String,
+        memo: String?
+    ) = TxData().apply {
+        this.amount = amount
+        this.destination = destination
+        mixin = MIXIN
+        priority = PendingTransaction.Priority.Priority_Medium
+        if (!memo.isNullOrEmpty()) {
+            userNotes = UserNotes(memo)
+        }
+    }
+
 
     suspend fun restoreHeightForNewWallet(): Long {
         // val currentNode: NodeInfo? = getNode() //
@@ -244,8 +283,8 @@ class MoneroKit(
         Log.e("eee", "observer.onWalletStored()\n - success: $success")
     }
 
-    override fun onTransactionCreated(tag: String, pendingTransaction: PendingTransaction) {
-        Log.e("eee", "observer.onTransactionCreated()\n - tag: $tag\n pendingTransaction.firstTxId : ${pendingTransaction.firstTxId}")
+    override fun onTransactionCreated(pendingTransaction: PendingTransaction) {
+        Log.e("eee", "observer.onTransactionCreated()\n - pendingTransaction.firstTxId : ${pendingTransaction.firstTxId}")
     }
 
     override fun onTransactionSent(txid: String) {
@@ -263,7 +302,7 @@ class MoneroKit(
     override fun onWalletOpen(device: Wallet.Device) {
         Log.e("eee", "observer.onWalletOpen()\n - device: $device")
     }
-    // ==============================================
+// ==============================================
 
 
     fun openWallet() {
@@ -366,6 +405,8 @@ class MoneroKit(
     }
 
     companion object {
+        const val MIXIN: Int = 0
+
         fun getInstance(
             context: Context,
             words: List<String>,
@@ -380,6 +421,12 @@ class MoneroKit(
             NetCipherHelper.createInstance(context)
 
             return MoneroKit(words.joinToString(" "), restoreHeight, walletId, walletService, context)
+        }
+
+        fun validateAddress(address: String) {
+            if (!Wallet.isAddressValid(address)) {
+                throw IllegalArgumentException("Invalid address")
+            }
         }
 
         private fun getHeight(input: String): Long {

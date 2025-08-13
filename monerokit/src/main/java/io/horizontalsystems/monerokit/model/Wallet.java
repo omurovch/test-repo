@@ -331,11 +331,11 @@ public class Wallet {
 
     public PendingTransaction createTransaction(TxData txData) {
         disposePendingTransaction();
-        int _priority = txData.getPriority().getValue();
+        int _priority = txData.priority.getValue();
         final boolean sweepAll = txData.getAmount() == SWEEP_ALL;
         Timber.d("TxData: %s", txData);
-        long txHandle = (sweepAll ? createSweepTransaction(txData.getDestination(), "", txData.getMixin(), _priority, accountIndex) :
-                createTransactionMultDest(txData.getDestinations(), "", txData.getAmounts(), txData.getMixin(), _priority, accountIndex, txData.getSubaddresses()));
+        long txHandle = (sweepAll ? createSweepTransaction(txData.getDestination(), "", txData.mixin, _priority, accountIndex) :
+                createTransactionMultDest(txData.getDestinations(), "", txData.getAmounts(), txData.mixin, _priority, accountIndex, txData.getSubaddresses()));
         pendingTransaction = new PendingTransaction(txHandle);
         pendingTransaction.setPocketChange(txData.getPocketChangeAmount());
         return pendingTransaction;
@@ -361,7 +361,7 @@ public class Wallet {
     public native void disposeTransaction(PendingTransaction pendingTransaction);
 
     public long estimateTransactionFee(TxData txData) {
-        return estimateTransactionFee(txData.getDestinations(), txData.getAmounts(), txData.getPriority().getValue());
+        return estimateTransactionFee(txData.getDestinations(), txData.getAmounts(), txData.priority.getValue());
     }
 
     private native long estimateTransactionFee(String[] destinations, long[] amounts, int priority);

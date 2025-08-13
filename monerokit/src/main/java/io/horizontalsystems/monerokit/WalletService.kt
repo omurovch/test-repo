@@ -1,6 +1,7 @@
 package io.horizontalsystems.monerokit
 
 import android.content.Context
+import io.horizontalsystems.monerokit.data.TxData
 import io.horizontalsystems.monerokit.model.PendingTransaction
 import io.horizontalsystems.monerokit.model.Wallet
 import io.horizontalsystems.monerokit.model.WalletListener
@@ -28,7 +29,7 @@ class WalletService(private val context: Context) {
         fun onRefreshed(wallet: Wallet, full: Boolean): Boolean
         fun onProgress(n: Int)
         fun onWalletStored(success: Boolean)
-        fun onTransactionCreated(tag: String, pendingTransaction: PendingTransaction)
+        fun onTransactionCreated(pendingTransaction: PendingTransaction)
         fun onTransactionSent(txid: String)
         fun onSendTransactionFailed(error: String)
         fun onWalletStarted(walletStatus: Wallet.Status?)
@@ -226,6 +227,65 @@ class WalletService(private val context: Context) {
                 }
 //                updated = !(observer?.onRefreshed(wallet, true) ?: false)
             }
+        }
+    }
+
+    fun createTransaction(txData: TxData) {
+        val wallet = getWallet() ?: return
+        Timber.d("CREATE TX for wallet: %s", wallet.name)
+
+        wallet.disposePendingTransaction()
+        txData.createPocketChange(wallet)
+
+        val pendingTransaction = wallet.createTransaction(txData)
+        val status = pendingTransaction.status
+        if (status !== PendingTransaction.Status.Status_Ok) {
+            Timber.e("Create Transaction failed: %s", pendingTransaction.getErrorString())
+        }
+
+        if (observer != null) {
+            observer?.onTransactionCreated(pendingTransaction)
+        } else {
+            wallet.disposePendingTransaction()
+        }
+    }
+
+    fun sendTransaction(notes: String?) {
+        val wallet = getWallet() ?: return
+
+        Timber.d("SEND TX for wallet: %s", wallet.name)
+
+        val pendingTransaction = wallet.pendingTransaction
+        requireNotNull(pendingTransaction) { "PendingTransaction is null" }
+        if (pendingTransaction.status !== PendingTransaction.Status.Status_Ok) {
+            Timber.e("PendingTransaction is %s", pendingTransaction.status)
+
+            wallet.disposePendingTransaction()
+            observer?.onSendTransactionFailed(pendingTransaction.getErrorString())
+            return
+        }
+        val txId = pendingTransaction.getFirstTxId()
+        val success = pendingTransaction.commit("", true)
+
+        if (success) {
+            wallet.disposePendingTransaction()
+            observer?.onTransactionSent(txId)
+            if (!notes.isNullOrEmpty()) {
+                wallet.setUserNote(txId, notes)
+            }
+
+            val rc = wallet.store()
+            Timber.d("wallet stored: %s with rc=%b", wallet.name, rc)
+            if (!rc) {
+                Timber.w("Wallet store failed: %s", wallet.status.errorString)
+            }
+            observer?.onWalletStored(rc)
+            listener?.updated = true
+        } else {
+            val error = pendingTransaction.getErrorString()
+            wallet.disposePendingTransaction()
+            observer?.onSendTransactionFailed(error)
+            return
         }
     }
 }

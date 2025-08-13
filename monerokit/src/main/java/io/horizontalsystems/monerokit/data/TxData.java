@@ -41,18 +41,12 @@ public class TxData implements Parcelable {
     private String[] destinations = new String[1];
     @Getter
     private long[] amounts = new long[1];
-    @Getter
-    @Setter
-    private int mixin;
-    @Getter
-    @Setter
-    private PendingTransaction.Priority priority;
+    public int mixin;
+    public PendingTransaction.Priority priority;
     @Getter
     private int[] subaddresses;
 
-    @Getter
-    @Setter
-    private UserNotes userNotes;
+    public UserNotes userNotes;
 
     public TxData() {
     }
