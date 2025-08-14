@@ -241,6 +241,7 @@ class WalletService(private val context: Context) {
         val status = pendingTransaction.status
         if (status !== PendingTransaction.Status.Status_Ok) {
             Timber.e("Create Transaction failed: %s", pendingTransaction.getErrorString())
+            throw IllegalStateException("Create Transaction failed: ${pendingTransaction.getErrorString()}")
         }
 
         if (observer != null) {
@@ -262,7 +263,7 @@ class WalletService(private val context: Context) {
 
             wallet.disposePendingTransaction()
             observer?.onSendTransactionFailed(pendingTransaction.getErrorString())
-            return
+            throw IllegalStateException("Send Transaction failed: ${pendingTransaction.getErrorString()}")
         }
         val txId = pendingTransaction.getFirstTxId()
         val success = pendingTransaction.commit("", true)
@@ -285,7 +286,7 @@ class WalletService(private val context: Context) {
             val error = pendingTransaction.getErrorString()
             wallet.disposePendingTransaction()
             observer?.onSendTransactionFailed(error)
-            return
+            throw IllegalStateException("Send Transaction failed: $error")
         }
     }
 }

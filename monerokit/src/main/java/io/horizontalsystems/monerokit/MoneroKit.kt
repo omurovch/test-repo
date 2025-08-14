@@ -365,10 +365,10 @@ class MoneroKit(
     }
 
     fun checkAndCloseWallet(aWallet: Wallet): Boolean {
-        val walletStatus = aWallet.getStatus()
-        if (!walletStatus.isOk()) {
+        val walletStatus = aWallet.status
+        if (!walletStatus.isOk) {
             Timber.tag("eee").e(walletStatus.errorString)
-//            toast(walletStatus.getErrorString())
+            throw IllegalStateException("Wallet recovery error: ${walletStatus.errorString}")
         }
         aWallet.close()
         return walletStatus.isOk()
