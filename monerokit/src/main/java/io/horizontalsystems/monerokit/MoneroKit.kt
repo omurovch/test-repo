@@ -465,3 +465,14 @@ class MoneroKit(
 
     }
 }
+
+fun ByteArray?.toRawHexString(): String {
+    return this?.joinToString(separator = "") {
+        it.toInt().and(0xff).toString(16).padStart(2, '0')
+    } ?: ""
+}
+
+fun ByteArray?.toHexString(): String {
+    val rawHex = this?.toRawHexString() ?: return ""
+    return "0x$rawHex"
+}
