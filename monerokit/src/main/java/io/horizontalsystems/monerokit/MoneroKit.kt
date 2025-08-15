@@ -2,7 +2,6 @@ package io.horizontalsystems.monerokit
 
 import android.content.Context
 import android.util.Log
-import io.horizontalsystems.monerokit.data.Node
 import io.horizontalsystems.monerokit.data.TxData
 import io.horizontalsystems.monerokit.data.UserNotes
 import io.horizontalsystems.monerokit.model.NetworkType
@@ -60,8 +59,7 @@ class MoneroKit(
     val receiveAddress: String
         get() = try {
             walletService.getWallet()?.address ?: throw IllegalStateException("Wallet is NULL")
-        } catch (e: Exception) {
-            Log.e("MoneroKit", "getAddress", e)
+        } catch (_: Exception) {
             ""
         }
 
@@ -193,16 +191,13 @@ class MoneroKit(
         }
 
         val newWalletFile = File(walletFolder, walletId)
-        val walletPassword = "" // TODO
-        val offset = "" // TODO mnemonic passphrase?
+        val walletPassword = ""
+        val offset = ""
         val newWallet = WalletManager.getInstance().recoveryWallet(newWalletFile, walletPassword, mnemonic, offset, restoreHeight)
         val success = checkAndCloseWallet(newWallet)
 
         val walletFile = File(walletFolder, walletId)
-        Timber.d("New Wallet delete %s", walletFile.absolutePath)
-        // NEXT line is VERY important for correct update
-        walletFile.delete() // when recovering wallets, the cache seems corrupt - so remove it
-
+        walletFile.delete()
 
         if (success) {
             Timber.i("Created wallet in %s", newWalletFile.absolutePath)
@@ -214,6 +209,7 @@ class MoneroKit(
     }
 
     // Observer ====================================
+
     private var firstBlock: Long = 0
 
     override fun onRefreshed(wallet: Wallet, full: Boolean): Boolean {
@@ -306,67 +302,6 @@ class MoneroKit(
     override fun onWalletOpen(device: Wallet.Device) {
         Log.e("eee", "observer.onWalletOpen()\n - device: $device")
     }
-// ==============================================
-
-
-    fun openWallet() {
-        Timber.i("called openWallet")
-        val walletName = "uw-test-wallet"
-        val rootStorage = Helper.getWalletRoot(context)
-        val walletFile = File(rootStorage, walletName)
-        val password = "123"
-
-        val walletManager = WalletManager.getInstance()
-
-        val wallet = walletManager.openWallet(walletFile.absolutePath, password)
-
-        Timber.i("restoreHeight: ${wallet.restoreHeight} ")
-        Timber.i("status: ${wallet.status} ")
-        Timber.tag("eee").e("address: ${wallet.address}")
-
-        if (wallet != null) {
-            walletManager.setDaemon(Node.fromString(node))
-
-            Timber.d("Using daemon %s", walletManager.getDaemonAddress())
-
-//            wallet.setListener(this)
-
-            wallet.init(0)
-            Timber.i("fullStatus: ${wallet.fullStatus} ")
-
-
-            wallet.startRefresh()
-
-//            Thread.sleep(10_000)
-//
-//            wallet.refresh()
-//            wallet.setProxy(NetCipherHelper.getProxy())
-        }
-
-
-    }
-
-    fun restoreWallet(seed: String) {
-        Log.e("eee", "called restoreWallet")
-
-        val password = "123"
-        val offset = ""
-        val restoreHeight = 3409492L
-        val walletName = "uw-test-wallet"
-        val rootStorage = Helper.getWalletRoot(context)
-        val newWalletFile = File(rootStorage, walletName)
-
-        Log.e("eee", "wallet path: ${newWalletFile.absolutePath}")
-
-        val newWallet: Wallet = WalletManager.getInstance()
-            .recoveryWallet(newWalletFile, password, seed, offset, restoreHeight)
-
-        Log.e("eee", "wallet: ${newWallet.address}")
-
-        val result = checkAndCloseWallet(newWallet)
-
-        Log.e("eee", "check result: $result")
-    }
 
     fun checkAndCloseWallet(aWallet: Wallet): Boolean {
         val walletStatus = aWallet.status
@@ -377,30 +312,6 @@ class MoneroKit(
         aWallet.close()
         return walletStatus.isOk()
     }
-
-//    override fun moneySpent(txId: String?, amount: Long) {
-//        Timber.d("moneySpent() %d @ %s", amount, txId)
-//    }
-
-//    override fun moneyReceived(txId: String?, amount: Long) {
-//        Timber.d("moneyReceived() %d @ %s", amount, txId)
-//    }
-
-//    override fun unconfirmedMoneyReceived(txId: String?, amount: Long) {
-//        Timber.d("unconfirmedMoneyReceived() %d @ %s", amount, txId)
-//    }
-//
-//    override fun newBlock(height: Long) {
-//        Timber.d("newBlock() @ %d", height)
-//    }
-//
-//    override fun updated() {
-//        Timber.d("updated()")
-//    }
-//
-//    override fun refreshed() {
-//        Timber.d("WalletListener::refreshed()")
-//    }
 
     sealed class SyncError : Error() {
         object NotStarted : SyncError() {
