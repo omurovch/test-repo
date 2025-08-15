@@ -117,6 +117,10 @@ class MoneroKit(
         Log.e("eee", "kit.stop() after launch ")
     }
 
+    fun saveState() {
+        walletService.storeWallet()
+    }
+
     fun send(
         amount: Long,
         address: String,
