@@ -410,10 +410,12 @@ class MoneroKit(
 
     companion object {
         const val MIXIN: Int = 0
+        const val MONERO_LEGACY_MNEMONIC_COUNT = 25
 
         fun getInstance(
             context: Context,
             words: List<String>,
+            passphrase: String,
             restoreDateOrHeight: String,
             walletId: String
         ): MoneroKit {
@@ -422,9 +424,16 @@ class MoneroKit(
 
             Log.e("eee", "computed restoreHeight = $restoreHeight")
 
+            val moneroMnemonic = if (words.size != MONERO_LEGACY_MNEMONIC_COUNT) {
+                CakeWalletStyleConverter.getLegacySeedFromBip39(words, passphrase)
+                    ?: throw IllegalArgumentException("BIP39 mnemonic can't be converted to Monero Legacy Mnemonic")
+            } else {
+                words.joinToString(" ")
+            }
+
             NetCipherHelper.createInstance(context)
 
-            return MoneroKit(words.joinToString(" "), restoreHeight, walletId, walletService, context)
+            return MoneroKit(moneroMnemonic, restoreHeight, walletId, walletService, context)
         }
 
         fun validateAddress(address: String) {

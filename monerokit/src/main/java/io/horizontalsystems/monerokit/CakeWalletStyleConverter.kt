@@ -240,26 +240,22 @@ object CakeWalletStyleConverter {
      * @return 25-word Monero legacy mnemonic or null if conversion fails
      */
     fun getLegacySeedFromBip39(
-        bip39Mnemonic: String,
-        accountIndex: Int = 0,
-        passphrase: String = ""
+        bip39Mnemonic: List<String>,
+        passphrase: String = "",
+        accountIndex: Int = 0
     ): String? {
         return try {
-            // Validate and normalize mnemonic
-            val words = bip39Mnemonic.trim().lowercase().split("\\s+".toRegex())
-            if (words.size !in listOf(12, 18, 24)) return null
+            if (bip39Mnemonic.size !in listOf(12, 18, 24)) return null
 
             // Step 1: Generate BIP39 seed
-            val seed = Mnemonic().toSeed(words, passphrase)
+            val seed = Mnemonic().toSeed(bip39Mnemonic, passphrase)
 
             // Step 2: Derive BIP32 key at m/44'/128'/accountIndex'/0/0
             val hdWallet = HDWallet(seed, 128, HDWallet.Purpose.BIP44)
             val privateKey = hdWallet.privateKey("m/44'/128'/$accountIndex'/0/0").privKey
-            Log.e("eee", "privateKey: ${privateKey.toByteArray().toHexString()}")
 
             // Step 3: Reduce private key with Ed25519 curve order (Cake Wallet approach)
             val spendKey = reduceECKey(privateKey.toByteArray())
-            Log.e("eee", "spendKey: ${spendKey.toHexString()}")
 
             // Step 4: Encode as Monero legacy mnemonic
             encodeMoneroMnemonic(spendKey)
